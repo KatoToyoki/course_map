@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div>
             <h1>
-                test
+                home home home home home home home home home home home home home home home home home home
             </h1>
         </div>
     )
