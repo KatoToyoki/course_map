@@ -66,7 +66,7 @@ export default function Layout() {
                                 </Col>
                             </Row>
                             <br /><hr />
-                            Copyright ©2021 國立臺北科技大學
+                            Copyright ©2023 國立臺北科技大學
                         </Col>
                     </Row>
                 </div>
