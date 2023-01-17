@@ -1,5 +1,9 @@
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
-import { Outlet, Link } from 'react-router-dom'
+import { Nav, Navbar, Row, Col } from 'react-bootstrap';
+import { Outlet, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -24,24 +28,49 @@ export default function Layout() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/course_map">回到首頁</Nav.Link>
-
-                        {/* <Nav.Link href="/course_map/map">課程地圖</Nav.Link> */}
                         <Nav.Link as={Link} to="/map">課程地圖</Nav.Link>
-
                         <Nav.Link as={Link} to="/school">各校資訊</Nav.Link>
-
-                        {/* <NavDropdown title="各校資訊" id="basic-nav-dropdown" className='white_word'>
-                            <NavDropdown.Item href="/course_map/school">臺北科技大學</NavDropdown.Item>
-                            <NavDropdown.Item href="/school/NTPU">臺北大學</NavDropdown.Item>
-                            <NavDropdown.Item href="/school/NTOU">臺灣海洋大學</NavDropdown.Item>
-                            <NavDropdown.Item href="/action/TMU">臺北醫學大學</NavDropdown.Item>
-                        </NavDropdown> */}
-
                     </Nav>
                 </Navbar.Collapse>
-
             </Navbar>
             <Outlet />
+            <footer>
+                <div className='footer_bg'>
+                    <Row>
+                        <Col sm={12} md={6} className='center'>
+                            <div>
+                                <img src={logo} alt="logo" width="50%"></img>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={6}>
+                            <Row>
+                                <Col sm={9}>
+                                    <span>
+                                        <FontAwesomeIcon icon={faLocationDot} />
+                                        &nbsp;&nbsp;
+                                        106344 台北市忠孝東路三段一號<br />
+                                    </span>
+
+                                    <span>
+                                        <FontAwesomeIcon icon={faPhone} />
+                                        &nbsp;
+                                        (886-2) 2771-2171<br /><br />
+                                    </span>
+                                </Col>
+                                <Col sm={3}>
+                                    <span className='pointer center'>
+                                        <a href="https://www.facebook.com/profile.php?id=100089037155805" className='facebook'>
+                                            <FontAwesomeIcon icon={faFacebook} size="4x" />
+                                        </a>
+                                    </span>
+                                </Col>
+                            </Row>
+                            <br /><hr />
+                            Copyright ©2021 國立臺北科技大學
+                        </Col>
+                    </Row>
+                </div>
+            </footer>
         </div >
     )
 }

@@ -1,3 +1,8 @@
+::selection {
+    color: #45a0e0;
+    background: #f1e534;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,6 +22,19 @@ p {
     align-items: center;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+.facebook {
+    color: white;
+}
+
+.facebook:hover {
+    color: #45a0e0;
+    transition-duration: .5s;
+}
+
 .nav_container {
     padding: 0.5%;
     padding-left: 5%;
@@ -29,4 +47,13 @@ p {
 
 .nav_logo {
     height: 40px;
+}
+
+.footer_bg {
+    padding: 15%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    color: white;
+    background: linear-gradient(-70deg, #41bee1, #adc48d);
+    width: 100%;
 }
