@@ -11,21 +11,21 @@ import School from './pages/School';
 
 import Course_map from './pages/Course_map';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/course_map" element={<Home />} />
-          <Route path="/course_map/map" element={<Map />} />
-          <Route path="/course_map/school" element={<School />} />
+          <Route path="/map" element={<Map />} />
+          <Route path="/school" element={<School />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
