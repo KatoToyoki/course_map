@@ -13,7 +13,7 @@ export default function Layout() {
         <div>
             <Navbar expand="lg" variant='dark' className='nav_container'>
 
-                <Navbar.Brand href="/home" className='center'>
+                <Navbar.Brand href="/course_map" className='center'>
                     <img src={logo} alt="logo" className='nav_logo'></img>
                     &nbsp;
                     教育大數據微學程
@@ -23,12 +23,12 @@ export default function Layout() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/home">回到首頁</Nav.Link>
+                        <Nav.Link href="/course_map">回到首頁</Nav.Link>
 
-                        <Nav.Link href="/map">課程地圖</Nav.Link>
+                        <Nav.Link href="/course_map/map">課程地圖</Nav.Link>
 
                         <NavDropdown title="各校資訊" id="basic-nav-dropdown" className='white_word'>
-                            <NavDropdown.Item href="/school">臺北科技大學</NavDropdown.Item>
+                            <NavDropdown.Item href="/course_map/school">臺北科技大學</NavDropdown.Item>
                             <NavDropdown.Item href="/school/NTPU">臺北大學</NavDropdown.Item>
                             <NavDropdown.Item href="/school/NTOU">臺灣海洋大學</NavDropdown.Item>
                             <NavDropdown.Item href="/action/TMU">臺北醫學大學</NavDropdown.Item>
