@@ -26,13 +26,20 @@ p {
     cursor: pointer;
 }
 
-.facebook {
-    color: white;
+.yellow_word {
+    color: #e79b2b;
 }
 
-.facebook:hover {
-    color: #45a0e0;
-    transition-duration: .5s;
+.light_green {
+    background-color: #e0f08d;
+}
+
+.green {
+    background-color: #adc48d;
+}
+
+.inside {
+    padding: 2%;
 }
 
 .nav_container {
@@ -56,6 +63,12 @@ p {
     padding-right: 15%;
 }
 
+@media (max-width:600px) {
+    .inner_container {
+        padding-top: 20%;
+    }
+}
+
 .footer_bg {
     padding: 15%;
     padding-top: 6%;
@@ -63,4 +76,13 @@ p {
     color: white;
     background: linear-gradient(-70deg, #41bee1, #adc48d);
     width: 100%;
+}
+
+.facebook {
+    color: white;
+}
+
+.facebook:hover {
+    color: #45a0e0;
+    transition-duration: .5s;
 }
