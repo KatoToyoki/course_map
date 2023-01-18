@@ -32,7 +32,7 @@ export default function Map() {
                                                     <Col sm={12} md={6} className='map_inside'>
                                                         <Row>
                                                             <Col sm={10}>
-                                                                <a href={"course/" + datas["course_id"]} className='map_a'>
+                                                                <a href={"/map/course/" + datas["course_id"]} className='map_a'>
                                                                     <div className="d-grid">
                                                                         <Button variant="outline-dark" size='lg'>
                                                                             {datas.course_name}

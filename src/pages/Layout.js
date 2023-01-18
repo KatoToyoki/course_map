@@ -27,7 +27,7 @@ export default function Layout() {
                     <Nav className="me-auto">
                         <Nav.Link href="/home">回到首頁</Nav.Link>
                         <Nav.Link href="/map">課程地圖</Nav.Link>
-                        <Nav.Link href="/school">各校資訊</Nav.Link>
+                        <Nav.Link href="/school">修讀資訊</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

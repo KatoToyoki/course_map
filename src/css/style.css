@@ -34,6 +34,11 @@ p {
     color: #45a0e0;
 }
 
+.orange {
+    background-color: #e79b2b;
+    border-color: #e79b2b;
+}
+
 .light_green {
     background-color: #e0f08d;
     border-color: #e0f08d;
@@ -57,6 +62,11 @@ p {
 .blue_green {
     background-color: #5bc4c5;
     border-color: #5bc4c5;
+}
+
+.gradient_bg {
+    background: linear-gradient(-70deg, #41bee1, #adc48d);
+
 }
 
 .inside {
