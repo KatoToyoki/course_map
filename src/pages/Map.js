@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 import '../css/style.css'
 import '../css/map.css'
 import { category } from '../data/map_data'
+// import { courses } from '../data/course_data'
 
 
 export default function Map() {
@@ -35,11 +36,14 @@ export default function Map() {
                                                         {datas.credit}
                                                     </Col>
                                                     <Col sm={10}>
-                                                        {datas.course_name}
-
-                                                        <a href={"/course_map/course/" + datas["course_id"]}>
-                                                            <Button>more</Button>
+                                                        {/* {datas.course_name} */}
+                                                        <a href={"/course_map#/course/" + datas["course_id"]}>
+                                                            {/* <Button>more</Button> */}
+                                                            {datas.course_name}
                                                         </a>
+                                                        {/* <a href={"/course_map/#/course/"}>
+                                                            <Button>more</Button>
+                                                        </a> */}
                                                     </Col>
                                                 </Row>
 
