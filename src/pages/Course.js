@@ -1,4 +1,4 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button } from "react-bootstrap";
 import { category } from '../data/map_data'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -67,6 +67,9 @@ export default function Course() {
                         {data.course_time.map((time) => {
                             return (
                                 <Row>
+                                    <Col sm={12}>
+                                        {time.semester}
+                                    </Col>
                                     <Col sm={6}>
                                         課號：{time.id}
                                     </Col>
@@ -114,13 +117,16 @@ export default function Course() {
                         {data.lecturer}
                     </Col>
 
-                    {/* <Col sm={12}>
-                        <button
-                            className="button icon-left"
-                            onClick={this.context.router.history.goBack}>
-                            Back
-                        </button>
-                    </Col> */}
+                    <Col sm={12}>
+                        <br />
+                    </Col>
+                    <Col sm={12} className='center'>
+                        <a href={"/map"}>
+                            <Button className="blue">
+                                上一頁
+                            </Button>
+                        </a>
+                    </Col>
                 </Row>
             </div>
         </div >

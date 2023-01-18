@@ -12,14 +12,16 @@ export const category = [
                 technology: "技術",
                 value: "",
                 course_depiction: "學習計算機程式語言Python的基礎與應用，建立Python程式設計墓本概念，\
-                    並能學以致用解決基本的問題。",
+                    並能學以致用解決基本的問題。\n",
                 course_time: [
                     {
+                        semester: "111學年第二學期（擇一）",
                         id: "317452",
                         day: "週一",
                         time: "08:00 - 10:00"
                     },
                     {
+                        semester: "",
                         id: "317462",
                         day: "週一",
                         time: "10:00 - 12:00"
@@ -41,6 +43,7 @@ export const category = [
                     使能更符合教育現場對此數據的應用。",
                 course_time: [
                     {
+                        semester: "112學年第一學期",
                         id: "316921",
                         day: "週四",
                         time: "16:00 - 19:00"
@@ -60,6 +63,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
+                        semester: "",
                         id: "",
                         day: "",
                         time: ""
@@ -79,6 +83,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
+                        semester: "",
                         id: "",
                         day: "",
                         time: ""
@@ -105,6 +110,7 @@ export const category = [
                     將使用教育資料並以小組方式進行議題發想與分析實作的學期專題。",
                 course_time: [
                     {
+                        semester: "111學年第二學期",
                         id: "316310",
                         day: "週一",
                         time: "13:00 - 16:00"
@@ -124,6 +130,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
+                        semester: "",
                         id: "",
                         day: "",
                         time: ""
@@ -143,6 +150,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
+                        semester: "",
                         id: "",
                         day: "",
                         time: ""
@@ -162,6 +170,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
+                        semester: "",
                         id: "",
                         day: "",
                         time: ""
@@ -187,6 +196,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
+                        semester: "",
                         id: "",
                         day: "",
                         time: ""
@@ -206,6 +216,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
+                        semester: "",
                         id: "",
                         day: "",
                         time: ""

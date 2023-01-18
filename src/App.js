@@ -4,7 +4,7 @@ import Map from './pages/Map';
 import School from './pages/School';
 import Course from './pages/Course';
 
-import { Routes, Route, HashRouter, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 export default function App() {
     return (

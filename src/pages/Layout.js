@@ -1,5 +1,5 @@
 import { Nav, Navbar, Row, Col } from 'react-bootstrap';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -15,8 +15,6 @@ export default function Layout() {
     return (
         <div>
             <Navbar expand="lg" variant='dark' className='nav_container'>
-
-                {/* <Navbar.Brand href="/course_map" className='center'> */}
                 <Navbar.Brand href="/home" className='center'>
                     <img src={logo} alt="logo" className='nav_logo'></img>
                     &nbsp;
@@ -27,14 +25,9 @@ export default function Layout() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        {/* <Nav.Link href="/course_map">回到首頁</Nav.Link> */}
-
                         <Nav.Link href="/home">回到首頁</Nav.Link>
                         <Nav.Link href="/map">課程地圖</Nav.Link>
-                        <Nav.Link href="/course">各校資訊</Nav.Link>
-                        {/* <Nav.Link as={Link} to="/home">回到首頁</Nav.Link>
-                        <Nav.Link as={Link} to="/map">課程地圖</Nav.Link>
-                        <Nav.Link as={Link} to="/school">各校資訊</Nav.Link> */}
+                        <Nav.Link href="/school">各校資訊</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
