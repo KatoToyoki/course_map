@@ -17,7 +17,7 @@ export default function Layout() {
             <Navbar expand="lg" variant='dark' className='nav_container'>
 
                 {/* <Navbar.Brand href="/course_map" className='center'> */}
-                <Navbar.Brand href="/course_map" className='center'>
+                <Navbar.Brand href="/home" className='center'>
                     <img src={logo} alt="logo" className='nav_logo'></img>
                     &nbsp;
                     教育大數據微學程
@@ -28,9 +28,13 @@ export default function Layout() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         {/* <Nav.Link href="/course_map">回到首頁</Nav.Link> */}
-                        <Nav.Link as={Link} to="/home">回到首頁</Nav.Link>
+
+                        <Nav.Link href="/home">回到首頁</Nav.Link>
+                        <Nav.Link href="/map">課程地圖</Nav.Link>
+                        <Nav.Link href="/course">各校資訊</Nav.Link>
+                        {/* <Nav.Link as={Link} to="/home">回到首頁</Nav.Link>
                         <Nav.Link as={Link} to="/map">課程地圖</Nav.Link>
-                        <Nav.Link as={Link} to="/school">各校資訊</Nav.Link>
+                        <Nav.Link as={Link} to="/school">各校資訊</Nav.Link> */}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
