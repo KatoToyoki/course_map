@@ -1,4 +1,5 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button, Nav } from "react-bootstrap";
+import { Outlet, Link } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -14,6 +15,7 @@ export default function Map() {
             <h1>
                 課程地圖
             </h1>
+            <p>通過本微學程，最低應修10學分</p>
             <br />
             <div>
                 {category.map((data) => {
@@ -34,6 +36,10 @@ export default function Map() {
                                                     </Col>
                                                     <Col sm={10}>
                                                         {datas.course_name}
+
+                                                        <a href={"/course_map/course/" + datas["course_id"]}>
+                                                            <Button>more</Button>
+                                                        </a>
                                                     </Col>
                                                 </Row>
 
@@ -64,7 +70,7 @@ export default function Map() {
                         </Row>
                     );
                 })}
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }

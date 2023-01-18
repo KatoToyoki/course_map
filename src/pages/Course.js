@@ -5,12 +5,16 @@ import 'bootstrap/dist/js/bootstrap.js';
 
 import '../css/style.css'
 
-export default function School() {
+import { courses } from '../data/course_data'
+
+export default function Course() {
+
     return (
         <div className="inner_container">
             <h1>
-                school school school school school school school school school school school school school school school school school school school school
+                course course course course course course course course course course course course
             </h1>
+
         </div>
     )
 }

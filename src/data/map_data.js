@@ -5,6 +5,7 @@ export const category = [
         inner_data: [
             {
                 course_name: "Python程式設計概論與應用",
+                course_id: "00",
                 credit: "2",
                 cognition: "認知",
                 knowledge: "",
@@ -13,6 +14,7 @@ export const category = [
             },
             {
                 course_name: "數據程式設計",
+                course_id: "01",
                 credit: "3",
                 cognition: "認知",
                 knowledge: "知識",
@@ -21,6 +23,7 @@ export const category = [
             },
             {
                 course_name: "教育數據分析與邏輯思維",
+                course_id: "02",
                 credit: "3",
                 cognition: "認知",
                 knowledge: "",
@@ -29,6 +32,7 @@ export const category = [
             },
             {
                 course_name: "教育統計學",
+                course_id: "03",
                 credit: "2",
                 cognition: "",
                 knowledge: "知識",
@@ -43,6 +47,7 @@ export const category = [
         inner_data: [
             {
                 course_name: "資料科學原理與教育數據應用",
+                course_id: "04",
                 credit: "3",
                 cognition: "認知",
                 knowledge: "知識",
@@ -51,6 +56,7 @@ export const category = [
             },
             {
                 course_name: "校務研究：教育場域數據分析實作",
+                course_id: "05",
                 credit: "3",
                 cognition: "認知",
                 knowledge: "知識",
@@ -59,6 +65,7 @@ export const category = [
             },
             {
                 course_name: "教育數據探勘與應用",
+                course_id: "06",
                 credit: "3",
                 cognition: "認知",
                 knowledge: "",
@@ -67,6 +74,7 @@ export const category = [
             },
             {
                 course_name: "教育資訊安全專題",
+                course_id: "07",
                 credit: "3",
                 cognition: "認知",
                 knowledge: "知識",
@@ -81,6 +89,7 @@ export const category = [
         inner_data: [
             {
                 course_name: "學習分析於PBL實務專題製作",
+                course_id: "08",
                 credit: "3",
                 cognition: "認知",
                 knowledge: "",
@@ -89,6 +98,7 @@ export const category = [
             },
             {
                 course_name: "應用人工智慧於教育專題製作",
+                course_id: "09",
                 credit: "3",
                 cognition: "認知",
                 knowledge: "",
