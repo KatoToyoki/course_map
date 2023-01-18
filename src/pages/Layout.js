@@ -7,7 +7,6 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
-
 import '../css/style.css'
 
 import logo from '../images/logo.png'
@@ -17,6 +16,7 @@ export default function Layout() {
         <div>
             <Navbar expand="lg" variant='dark' className='nav_container'>
 
+                {/* <Navbar.Brand href="/course_map" className='center'> */}
                 <Navbar.Brand href="/course_map" className='center'>
                     <img src={logo} alt="logo" className='nav_logo'></img>
                     &nbsp;
@@ -27,7 +27,8 @@ export default function Layout() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/course_map">回到首頁</Nav.Link>
+                        {/* <Nav.Link href="/course_map">回到首頁</Nav.Link> */}
+                        <Nav.Link as={Link} to="/home">回到首頁</Nav.Link>
                         <Nav.Link as={Link} to="/map">課程地圖</Nav.Link>
                         <Nav.Link as={Link} to="/school">各校資訊</Nav.Link>
                     </Nav>

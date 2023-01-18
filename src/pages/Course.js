@@ -1,10 +1,10 @@
 import { Col, Row } from "react-bootstrap";
+import { category } from '../data/map_data'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
-
 import '../css/style.css'
 import '../css/map.css'
-import { category } from '../data/map_data'
 
 export default function Course() {
     const id = (window.location.href).slice(-2),
@@ -113,6 +113,14 @@ export default function Course() {
                     <Col sm={8} className='inside'>
                         {data.lecturer}
                     </Col>
+
+                    {/* <Col sm={12}>
+                        <button
+                            className="button icon-left"
+                            onClick={this.context.router.history.goBack}>
+                            Back
+                        </button>
+                    </Col> */}
                 </Row>
             </div>
         </div >

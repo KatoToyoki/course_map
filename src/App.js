@@ -12,7 +12,8 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
-                    <Route path="/course_map" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
+                    {/* <Route path="/course_map" element={<Home />} /> */}
                     <Route path="/map" element={<Map />} />
                     <Route path="/course">
                         <Route path=":course_id" element={<Course />} />
