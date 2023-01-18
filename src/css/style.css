@@ -30,12 +30,33 @@ p {
     color: #e79b2b;
 }
 
+.blue_word {
+    color: #45a0e0;
+}
+
 .light_green {
     background-color: #e0f08d;
+    border-color: #e0f08d;
 }
 
 .green {
     background-color: #adc48d;
+    border-color: #adc48d;
+}
+
+.light_blue {
+    background-color: #41bee1;
+    border-color: #41bee1;
+}
+
+.blue {
+    background-color: #45a0e0;
+    border-color: #45a0e0;
+}
+
+.blue_green {
+    background-color: #5bc4c5;
+    border-color: #5bc4c5;
 }
 
 .inside {
@@ -57,15 +78,16 @@ p {
 }
 
 .inner_container {
-    top: 12%;
-    padding: 8%;
+    top: 10%;
+    padding: 7%;
     padding-left: 15%;
     padding-right: 15%;
+    padding-bottom: 5%;
 }
 
 @media (max-width:600px) {
     .inner_container {
-        padding-top: 20%;
+        padding-top: 15%;
     }
 }
 
