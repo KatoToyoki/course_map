@@ -1,5 +1,6 @@
 .map_inside {
     padding: 0.5%;
+    padding-bottom: 1%;
 }
 
 .map_bg {
@@ -57,10 +58,6 @@
         padding-top: 20%;
         padding-left: 10%;
         padding-right: 10%;
-    }
-
-    .blank {
-        display: none;
     }
 }
 
@@ -136,7 +133,7 @@
     border-color: #45a0e0;
     color: #45a0e0;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 10px;
     width: 100%;
 }
 

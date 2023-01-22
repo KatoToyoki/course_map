@@ -21,64 +21,54 @@ export default function School() {
                     <br />
 
                     <Row>
-                        <Col sm={12} md={6} className='center'>
-                            <Row>
-                                <Col sm={12}>
-                                    <div className="green square center">
-                                        <h3>事前申請</h3>
-                                    </div>
-                                    <br />
-                                </Col>
+                        <Col sm={12} md={6} className='center map_inside'>
+                            <div className="yellow_border square">
+                                <div className="center">
+                                    <h3 className="yellow_word">事前申請</h3>
+                                </div>
+                                <hr />
 
-                                <Col sm={12}>
-                                    <a href={"school/" + school[0]["abbreviation"]} className='map_a'>
-                                        <div className="d-grid">
-                                            <Button className="gradient_bg" size='lg'>
-                                                臺北醫學大學
-                                            </Button>
-                                        </div>
-                                    </a>
-                                    <br />
-                                    <a href={"school/" + school[1]["abbreviation"]} className='map_a'>
-                                        <div className="d-grid">
-                                            <Button className="gradient_bg" size='lg'>
-                                                臺灣海洋大學
-                                            </Button>
-                                        </div>
-                                    </a>
-                                </Col>
-                                <Col sm={12}><br /></Col>
-                            </Row>
+                                <a href={"school/" + school[0]["abbreviation"]} className='map_a'>
+                                    <div className="d-grid">
+                                        <Button className="blue" size='lg'>
+                                            臺北醫學大學
+                                        </Button>
+                                    </div>
+                                </a>
+                                <br />
+                                <a href={"school/" + school[1]["abbreviation"]} className='map_a'>
+                                    <div className="d-grid">
+                                        <Button className="blue" size='lg'>
+                                            臺灣海洋大學
+                                        </Button>
+                                    </div>
+                                </a>
+                            </div>
                         </Col>
 
-                        <Col sm={12} md={6} className='center'>
-                            <Row>
-                                <Col sm={12}>
-                                    <div className="green square center">
-                                        <h3>事後認證</h3>
-                                    </div>
-                                    <br />
-                                </Col>
+                        <Col sm={12} md={6} className='center map_inside'>
+                            <div className="yellow_border square">
+                                <div className="center">
+                                    <h3 className="yellow_word">事後認證</h3>
+                                </div>
+                                <hr />
 
-                                <Col sm={12}>
-                                    <a href={"school/" + school[2]["abbreviation"]} className='map_a'>
-                                        <div className="d-grid">
-                                            <Button className="gradient_bg" size='lg'>
-                                                臺北大學
-                                            </Button>
-                                        </div>
-                                    </a>
-                                    <br />
-                                    <a href={"school/" + school[3]["abbreviation"]} className='map_a'>
-                                        <div className="d-grid">
-                                            <Button className="gradient_bg" size='lg'>
-                                                臺北科技大學
-                                            </Button>
-                                        </div>
-                                    </a>
-                                </Col>
-                                <Col sm={12}><br /></Col>
-                            </Row>
+                                <a href={"school/" + school[2]["abbreviation"]} className='map_a'>
+                                    <div className="d-grid">
+                                        <Button className="blue" size='lg'>
+                                            臺北大學
+                                        </Button>
+                                    </div>
+                                </a>
+                                <br />
+                                <a href={"school/" + school[3]["abbreviation"]} className='map_a'>
+                                    <div className="d-grid">
+                                        <Button className="blue" size='lg'>
+                                            臺北科技大學
+                                        </Button>
+                                    </div>
+                                </a>
+                            </div>
                         </Col>
 
                         <Col sm={12}><br /></Col>
@@ -106,7 +96,6 @@ export default function School() {
                                     再轉交由<span className="yellow_word"><b>學程所屬學校</b></span>審核及核發學分學程證明。
                                 </p>
                             </div>
-
 
                             <h5>一、單一學校學程：</h5>
                             <p>
@@ -181,7 +170,6 @@ export default function School() {
                                     </Button>
                                 </a>
                             </div>
-
                         </Col>
                     </Row>
                 </div >

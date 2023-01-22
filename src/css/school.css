@@ -1,7 +1,9 @@
 .square {
-    padding: 5%;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     border-radius: 30px;
-    color: white;
+    width: 100%;
+    margin-left: 14%;
+    margin-right: 14%;
 }

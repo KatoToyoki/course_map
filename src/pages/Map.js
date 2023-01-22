@@ -48,27 +48,28 @@ export default function Map() {
                                                 <Row>
                                                     <Col sm={12} md={7} className='map_inside '>
                                                         <Row>
-                                                            <Col sm={2} className='center'>
-                                                                <div className="credit blue_green">
-                                                                    {datas.credit}
-                                                                </div>
-                                                            </Col>
-                                                            <Col sm={10}>
+
+                                                            <Col sm={10} className='map_inside'>
                                                                 <a href={"/map/course/" + datas["course_id"]} className='map_a'>
                                                                     <div class="map_btn">
                                                                         <b>{datas.course_name}</b>
                                                                     </div>
                                                                 </a>
                                                             </Col>
+                                                            <Col sm={2} className='center'>
+                                                                <div className="credit blue_green map_inside">
+                                                                    {datas.credit}
+                                                                </div>
+                                                            </Col>
                                                         </Row>
                                                     </Col>
                                                     <Col sm={12} md={5} className='map_inside center'>
-                                                        <Row className="center">
-                                                            <Col sm={3} className='horizontal dot'>{cognition}</Col>
-                                                            <Col sm={3} className='horizontal dot'>{knowledge}</Col>
-                                                            <Col sm={3} className='horizontal dot'>{technology}</Col>
-                                                            <Col sm={3} className='horizontal dot'>{value}</Col>
-                                                        </Row>
+                                                        <div className="vertical dot separate map_inside">
+                                                            {cognition} &nbsp;&nbsp;&nbsp;&nbsp;
+                                                            {knowledge} &nbsp;&nbsp;&nbsp;&nbsp;
+                                                            {technology}&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            {value}
+                                                        </div>
                                                     </Col>
                                                 </Row>
                                             );

@@ -1,14 +1,10 @@
-::selection {
-    color: #45a0e0;
-    background: #f1e534;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
+    font-family: "微軟正黑體";
 }
 
 p {
@@ -47,6 +43,15 @@ p {
 .green {
     background-color: #adc48d;
     border-color: #adc48d;
+}
+
+.yellow_border {
+    border: solid 1.5px;
+    border-color: #e79b2b;
+}
+
+.green_word {
+    color: #adc48d;
 }
 
 .light_blue {
@@ -126,4 +131,5 @@ p {
     background: linear-gradient(70deg, #e0f08d, #45a0e0);
     border-radius: 1000px;
     color: white;
+    text-shadow: black 0.1em 0.1em 0.5em;
 }
