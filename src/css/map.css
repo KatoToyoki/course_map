@@ -59,6 +59,10 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    .blank {
+        display: none;
+    }
 }
 
 .credit {

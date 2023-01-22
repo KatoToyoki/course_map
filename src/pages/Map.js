@@ -46,7 +46,7 @@ export default function Map() {
 
                                             return (
                                                 <Row>
-                                                    <Col sm={12} md={7} className='map_inside '>
+                                                    <Col sm={12} md={6} className='map_inside '>
                                                         <Row>
 
                                                             <Col sm={10} className='map_inside'>
@@ -63,13 +63,13 @@ export default function Map() {
                                                             </Col>
                                                         </Row>
                                                     </Col>
-                                                    <Col sm={12} md={5} className='map_inside center'>
-                                                        <div className="vertical dot separate map_inside">
-                                                            {cognition} &nbsp;&nbsp;&nbsp;&nbsp;
-                                                            {knowledge} &nbsp;&nbsp;&nbsp;&nbsp;
-                                                            {technology}&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            {value}
-                                                        </div>
+                                                    <Col sm={12} md={6} className='map_inside center'>
+                                                        <Row className="center ">
+                                                            <Col sm={12} md={3} className="center dot">{cognition}</Col>
+                                                            <Col sm={12} md={3} className="center dot">{knowledge}</Col>
+                                                            <Col sm={12} md={3} className="center dot">{technology}</Col>
+                                                            <Col sm={12} md={3} className="center dot">{value}</Col>
+                                                        </Row>
                                                     </Col>
                                                 </Row>
                                             );
