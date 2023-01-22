@@ -27,40 +27,47 @@ export default function Map() {
                                     <Col sm={12} md={10}>
                                         <hr />
                                         {data.inner_data.map((datas) => {
+                                            var cognition = datas.cognition,
+                                                knowledge = datas.knowledge,
+                                                technology = datas.technology,
+                                                value = datas.value;
+
+                                            cognition = dot(cognition, "cognition");
+                                            knowledge = dot(knowledge, "knowledge");
+                                            technology = dot(technology, "technology");
+                                            value = dot(value, "value");
+
+                                            function dot(variable, name) {
+                                                if (variable === "") {
+                                                    return <b className='blank'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>;
+                                                }
+                                                return <b className={name}>{variable}</b>;
+                                            }
+
                                             return (
                                                 <Row>
-                                                    <Col sm={12} md={6} className='map_inside'>
+                                                    <Col sm={12} md={7} className='map_inside '>
                                                         <Row>
-                                                            <Col sm={10}>
-                                                                <a href={"/map/course/" + datas["course_id"]} className='map_a'>
-                                                                    <div className="d-grid">
-                                                                        <Button variant="outline-dark" size='lg'>
-                                                                            {datas.course_name}
-                                                                        </Button>
-                                                                    </div>
-                                                                </a>
-                                                            </Col>
                                                             <Col sm={2} className='center'>
                                                                 <div className="credit blue_green">
                                                                     {datas.credit}
                                                                 </div>
                                                             </Col>
+                                                            <Col sm={10}>
+                                                                <a href={"/map/course/" + datas["course_id"]} className='map_a'>
+                                                                    <div class="map_btn">
+                                                                        <b>{datas.course_name}</b>
+                                                                    </div>
+                                                                </a>
+                                                            </Col>
                                                         </Row>
                                                     </Col>
-                                                    <Col sm={12} md={6} className='map_inside'>
-                                                        <Row className="">
-                                                            <Col sm={3} className='center'>
-                                                                <b className="cognition">{datas.cognition}</b>
-                                                            </Col>
-                                                            <Col sm={3} className='center'>
-                                                                <b className="knowledge">{datas.knowledge}</b>
-                                                            </Col>
-                                                            <Col sm={3} className='center'>
-                                                                <b className="technology">{datas.technology}</b>
-                                                            </Col>
-                                                            <Col sm={3} className='center'>
-                                                                <b className="value">{datas.value}</b>
-                                                            </Col>
+                                                    <Col sm={12} md={5} className='map_inside center'>
+                                                        <Row className="center">
+                                                            <Col sm={3} className='horizontal dot'>{cognition}</Col>
+                                                            <Col sm={3} className='horizontal dot'>{knowledge}</Col>
+                                                            <Col sm={3} className='horizontal dot'>{technology}</Col>
+                                                            <Col sm={3} className='horizontal dot'>{value}</Col>
                                                         </Row>
                                                     </Col>
                                                 </Row>

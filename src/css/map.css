@@ -58,6 +58,10 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    .blank {
+        display: none;
+    }
 }
 
 .credit {
@@ -70,17 +74,74 @@
 }
 
 .cognition {
-    color: #77aa4a;
+    color: white;
+    background-color: #77aa4a;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 3px;
 }
 
 .knowledge {
-    color: #51802e;
+    color: white;
+    background-color: #51802e;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 3px;
 }
 
 .technology {
-    color: #006500;
+    color: white;
+    background-color: #006500;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 3px;
 }
 
 .value {
-    color: #003200;
+    color: white;
+    background-color: #003200;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 3px;
+}
+
+.blank {
+    color: white;
+    padding: 10px;
+    margin: 3px;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: center;
+}
+
+.vertical {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    text-align: center;
+    word-break: keep-all;
+}
+
+.button_length {
+    width: 100% !important;
+}
+
+.map_btn {
+    padding: 4%;
+    border: solid 1px;
+    border-color: #45a0e0;
+    color: #45a0e0;
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.map_btn:hover {
+    color: white;
+    background-color: #45a0e0;
+    transition-duration: .5s;
 }
