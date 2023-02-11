@@ -44,7 +44,10 @@
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
 
+#menu {
+    opacity: 0%;
 }
 
 @media (max-width:600px) {
@@ -56,14 +59,114 @@
 
     .map_container {
         padding-top: 20%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     .blank {
         display: none;
     }
 }
+
+@media(max-width:920px) {
+    #menu {
+        position: fixed;
+        z-index: 3;
+        top: 10%;
+        right: 5%;
+        opacity: 100%;
+    }
+
+    .menu_course {
+        display: none;
+    }
+
+    .menu_taking {
+        display: none;
+    }
+
+    .menu_job {
+        display: none;
+    }
+
+    .menu_material {
+        display: none;
+    }
+}
+
+.menu_course {
+    position: fixed;
+    z-index: 3;
+    width: 160px;
+    top: 90px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #45a0e0;
+    padding: 10px;
+}
+
+.menu_taking {
+    position: fixed;
+    z-index: 3;
+    width: 160px;
+    top: 145px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #45a0e0;
+    padding: 10px;
+}
+
+.menu_job {
+    position: fixed;
+    z-index: 3;
+    width: 160px;
+    top: 200px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #45a0e0;
+    padding: 10px;
+}
+
+.menu_material {
+    position: fixed;
+    z-index: 3;
+    width: 160px;
+    top: 255px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #45a0e0;
+    padding: 10px;
+}
+
+.menu_course:hover {
+    background-color: #e79b2b;
+    transition-duration: .5s;
+}
+
+.menu_taking:hover {
+    background-color: #e79b2b;
+    transition-duration: .5s;
+}
+
+.menu_job:hover {
+    background-color: #e79b2b;
+    transition-duration: .5s;
+}
+
+.menu_material:hover {
+    background-color: #e79b2b;
+    transition-duration: .5s;
+}
+
+.no_decoration {
+    text-decoration: none;
+}
+
+.no_decoration:hover {
+    text-decoration: none;
+    color: white;
+}
+
 
 .credit {
     border-radius: 1000px;

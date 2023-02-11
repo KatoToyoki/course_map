@@ -7,8 +7,8 @@ body {
     font-family: "微軟正黑體";
 }
 
-p {
-    text-align: justify;
+p,
+li {
     line-height: 2;
 }
 
@@ -22,12 +22,24 @@ p {
     cursor: pointer;
 }
 
+.inside {
+    padding: 1%;
+}
+
 .yellow_word {
     color: #e79b2b;
 }
 
 .blue_word {
     color: #45a0e0;
+}
+
+.white_word {
+    color: white;
+}
+
+.white {
+    background-color: white;
 }
 
 .orange {

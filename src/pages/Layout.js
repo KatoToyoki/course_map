@@ -1,4 +1,4 @@
-import { Nav, Navbar, Row, Col } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Row, Col } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -25,9 +25,13 @@ export default function Layout() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/home">回到首頁</Nav.Link>
-                        <Nav.Link href="/map">課程地圖</Nav.Link>
-                        <Nav.Link href="/school">修讀資訊</Nav.Link>
+                        <Nav.Link href="/news">最新消息</Nav.Link>
+                        <Nav.Link href="/introduce">認識微學程</Nav.Link>
+                        <Nav.Link href="/map">課程資訊</Nav.Link>
+                        <Nav.Link href="/qa">修讀QA</Nav.Link>
+                        <Nav.Link href="/about">關於本計畫</Nav.Link>
+                        <Nav.Link href="/result">計畫成果</Nav.Link>
+                        <Nav.Link href="/download">檔案下載</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
