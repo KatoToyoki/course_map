@@ -1,8 +1,7 @@
-import { Nav, Navbar, NavDropdown, Row, Col } from 'react-bootstrap';
+import { Nav, Navbar, Row, Col } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faPhone, faBuilding, faSchool, faPerson, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faBuilding, faSchool, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -64,7 +63,7 @@ export default function Layout() {
                                         </Col>
 
                                         <Col xs={1} className="center">
-                                            <FontAwesomeIcon icon={faPerson} />
+                                            <FontAwesomeIcon icon={faUser} />
                                         </Col>
                                         <Col xs={11}>
                                             聯絡窗口：資訊工程系 蔡宜蕙小姐<br />
