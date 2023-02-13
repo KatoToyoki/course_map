@@ -52,10 +52,12 @@ export default function Map() {
                                 <Row>
                                     <Col sm={12} md={2} className='map_inside'>
                                         <h4>{data.difficulty}</h4>
-                                        <p>{data.depiction}</p>
+                                        {data.depiction}
                                     </Col>
                                     <Col sm={12} md={10}>
                                         <hr />
+                                    </Col>
+                                    <Col sm={12} md={12} className="inside">
                                         {data.inner_data.map((datas) => {
                                             var cognition = datas.cognition,
                                                 knowledge = datas.knowledge,
@@ -76,24 +78,26 @@ export default function Map() {
 
                                             return (
                                                 <Row>
-                                                    <Col sm={12} md={7} className='map_inside '>
+                                                    <Col sm={12} md={9} className='map_inside '>
                                                         <Row>
-
-                                                            <Col sm={9} className='map_inside'>
+                                                            <Col sm={6} className='map_inside'>
                                                                 <a href={"/map/course/" + datas["course_id"]} className='map_a'>
                                                                     <div class="map_btn">
                                                                         <b>{datas.course_name}</b>
                                                                     </div>
                                                                 </a>
                                                             </Col>
-                                                            <Col sm={3} className='center'>
-                                                                <div className="green_word map_inside">
-                                                                    <b>{datas.credit}學分</b>
+                                                            <Col sm={2} className='center'>
+                                                                <b>{datas.credit}學分</b>
+                                                            </Col>
+                                                            <Col sm={4} className='vertical inside'>
+                                                                <div className="green_word ">
+                                                                    <b>{datas.course_time[0].semester}</b>
                                                                 </div>
                                                             </Col>
                                                         </Row>
                                                     </Col>
-                                                    <Col sm={12} md={5} className='map_inside center disappear'>
+                                                    <Col sm={12} md={3} className=' center disappear'>
                                                         <Row className="center ">
                                                             <Col sm={3} className=" dot">{cognition}</Col>
                                                             <Col sm={3} className=" dot">{knowledge}</Col>
@@ -104,7 +108,6 @@ export default function Map() {
                                                 </Row>
                                             );
                                         })}
-                                        <br />
                                     </Col>
                                 </Row>
                             );
