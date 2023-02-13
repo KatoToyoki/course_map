@@ -1,9 +1,6 @@
 import Layout from './pages/Layout';
-import Home from './pages/Home';
 import Map from './pages/Map';
-import School from './pages/School';
 import Course from './pages/Course';
-import College from './pages/College'
 import News from './pages/News';
 import QA from './pages/QA';
 import About from './pages/About';
@@ -25,14 +22,9 @@ export default function App() {
                     <Route path="/news">
                         <Route path=":news_id" element={<NewsEach />} />
                     </Route>
-                    <Route path="/home" element={<Home />} />
                     <Route path="/map" element={<Map />} />
                     <Route path="/map/course">
                         <Route path=":course_id" element={<Course />} />
-                    </Route>
-                    <Route path="/school" element={<School />} />
-                    <Route path="/school">
-                        <Route path=":school_name" element={<College />} />
                     </Route>
                     <Route path="/qa" element={<QA />} />
                     <Route path="/about" element={<About />} />

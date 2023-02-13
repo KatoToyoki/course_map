@@ -9,8 +9,8 @@ import '../css/style.css'
 
 export default function QA() {
     return (
-        <div className="map_bg">
-            <div id="menu">
+        <div>
+            <div className="phone_menu">
                 <Dropdown>
                     <Dropdown.Toggle id="dropdown-basic" className="blue">
                         <h3 className="inside">
@@ -19,21 +19,21 @@ export default function QA() {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="/QA#common_questions">常見QA</Dropdown.Item>
-                        <Dropdown.Item href="/QA#asking-question">我要發問</Dropdown.Item>
+                        <Dropdown.Item href="/qa#common_questions">常見QA</Dropdown.Item>
+                        <Dropdown.Item href="/qa#asking_question">我要發問</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
             </div>
 
             <div>
-                <a href="/QA#common_questions" className="no_decoration white_word">
-                    <div className="menu_course">
+                <a href="/qa#common_questions" className="no_decoration white_word">
+                    <div className="com_button1">
                         常見QA
                     </div>
                 </a>
 
-                <a href="/QA#asking-question" className="no_decoration white_word">
-                    <div className="menu_taking">
+                <a href="/qa#asking_question" className="no_decoration white_word">
+                    <div className="com_button2">
                         我要發問
                     </div>
                 </a>
@@ -42,8 +42,8 @@ export default function QA() {
             {/* the course anchors (in order not to be covered by the navbar) */}
             <span id="common_questions" />
 
-            <div className="map_container">
-                <div className="map_content">
+            <div className="c_container">
+                <div className="content">
                     <h2 className="blue_word">修讀QA</h2>
                     <br />
                     <Row>
@@ -58,7 +58,7 @@ export default function QA() {
                         {questions.map((data) => {
                             return (
                                 <Col sm={12} md={6} className="inside">
-                                    <h5 className="yellow_word">#{data.id}</h5>
+                                    <h5 className="orange_word">#{data.id}</h5>
                                     <p>
                                         <b>Q：</b>{data.q}
                                     </p>
@@ -74,7 +74,7 @@ export default function QA() {
                     {/* the course anchors (in order not to be covered by the navbar) */}
                     <span id="common_questions" />
 
-                    <Row id="asking-question">
+                    <Row id="asking_question">
                         <Col xs={2} className='vertical inside'>
                             <h4>我要發問</h4>
                         </Col>

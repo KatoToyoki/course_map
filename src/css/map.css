@@ -3,13 +3,7 @@
     padding-bottom: 1%;
 }
 
-.map_bg {
-    background: url('../images/left.jpeg');
-    background-attachment: fixed;
-    background-repeat: repeat-y;
-}
-
-.map_container {
+.c_container {
     top: 10%;
     padding: 7%;
     padding-left: 10%;
@@ -17,7 +11,7 @@
     padding-bottom: 5%;
 }
 
-.map_content {
+.content {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 50px;
     padding: 7%;
@@ -40,16 +34,15 @@
     padding-left: 18%;
     padding-right: 18%;
     padding-bottom: 5%;
-    background: url('../images/bg.jpeg');
+    background: url('../images/bg.png');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-#menu {
+.phone_menu {
     display: none;
 }
-
 
 @media (max-width:600px) {
     .course_container {
@@ -58,7 +51,7 @@
         padding-right: 3%;
     }
 
-    .map_container {
+    .c_container {
         padding-top: 20%;
         padding-left: 3%;
         padding-right: 3%;
@@ -74,7 +67,7 @@
 }
 
 @media(max-width:920px) {
-    #menu {
+    .phone_menu {
         position: fixed;
         z-index: 3;
         top: 10%;
@@ -82,24 +75,24 @@
         display: block;
     }
 
-    .menu_course {
+    .com_button1 {
         display: none;
     }
 
-    .menu_taking {
+    .com_button2 {
         display: none;
     }
 
-    .menu_job {
+    .com_button3 {
         display: none;
     }
 
-    .menu_material {
+    .com_button4 {
         display: none;
     }
 }
 
-.menu_course {
+.com_button1 {
     position: fixed;
     z-index: 3;
     width: 160px;
@@ -110,7 +103,7 @@
     padding: 10px;
 }
 
-.menu_taking {
+.com_button2 {
     position: fixed;
     z-index: 3;
     width: 160px;
@@ -121,7 +114,7 @@
     padding: 10px;
 }
 
-.menu_job {
+.com_button3 {
     position: fixed;
     z-index: 3;
     width: 160px;
@@ -132,7 +125,7 @@
     padding: 10px;
 }
 
-.menu_material {
+.com_button4 {
     position: fixed;
     z-index: 3;
     width: 160px;
@@ -143,22 +136,22 @@
     padding: 10px;
 }
 
-.menu_course:hover {
+.com_button1:hover {
     background-color: #e79b2b;
     transition-duration: .5s;
 }
 
-.menu_taking:hover {
+.com_button2:hover {
     background-color: #e79b2b;
     transition-duration: .5s;
 }
 
-.menu_job:hover {
+.com_button3:hover {
     background-color: #e79b2b;
     transition-duration: .5s;
 }
 
-.menu_material:hover {
+.com_button4:hover {
     background-color: #e79b2b;
     transition-duration: .5s;
 }
@@ -171,7 +164,6 @@
     text-decoration: none;
     color: white;
 }
-
 
 .credit {
     border-radius: 1000px;
@@ -285,4 +277,8 @@
     color: white;
     background-color: #e79b2b;
     transition-duration: .5s;
+}
+
+.l {
+    background-color: aqua;
 }

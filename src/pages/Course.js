@@ -10,7 +10,11 @@ export default function Course() {
     const id = (window.location.href).slice(-2),
         temp = findData(id),
         difficulty = temp[0],
-        data = temp[1];
+        data = temp[1],
+        cognition = cog(data.cognition),
+        knowledge = kno(data.knowledge),
+        technology = tec(data.technology),
+        value = val(data.value);
 
     function findData(id) {
         for (var i = 0; i < category.length; i++) {
@@ -20,6 +24,34 @@ export default function Course() {
                 }
             }
         }
+    }
+
+    function cog(cognition) {
+        if (cognition === "") {
+            return <div />
+        }
+        return <div>認知</div>
+    }
+
+    function kno(knowledge) {
+        if (knowledge === "") {
+            return <div />
+        }
+        return <div>知識</div>
+    }
+
+    function tec(technology) {
+        if (technology === "") {
+            return <div />
+        }
+        return <div>技術</div>
+    }
+
+    function val(value) {
+        if (value === "") {
+            return <div />
+        }
+        return <div>價值</div>
     }
 
     return (
@@ -37,7 +69,7 @@ export default function Course() {
                         </h2>
                     </Col>
                     <hr></hr>
-                    <Col sm={12} className='yellow_word'>
+                    <Col sm={12} className='orange_word'>
                         <p><b>{data.course_depiction}</b></p>
                     </Col>
                     <Col sm={4} className='light_green inside'>
@@ -46,16 +78,16 @@ export default function Course() {
                     <Col sm={8} className='green inside'>
                         <Row>
                             <Col sm={3} className='center'>
-                                {data.cognition}
+                                {cognition}
                             </Col>
                             <Col sm={3} className='center'>
-                                {data.knowledge}
+                                {knowledge}
                             </Col>
                             <Col sm={3} className='center'>
-                                {data.technology}
+                                {technology}
                             </Col>
                             <Col sm={3} className='center'>
-                                {data.value}
+                                {value}
                             </Col>
                         </Row>
                     </Col>

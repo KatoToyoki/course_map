@@ -26,7 +26,7 @@ li {
     padding: 1%;
 }
 
-.yellow_word {
+.orange_word {
     color: #e79b2b;
 }
 
@@ -57,7 +57,7 @@ li {
     border-color: #adc48d;
 }
 
-.yellow_border {
+.orange_border {
     border: solid 1.5px;
     border-color: #e79b2b;
 }
@@ -85,10 +85,8 @@ li {
     color: #5bc4c5;
 }
 
-
 .gradient_bg {
     background: linear-gradient(-70deg, #41bee1, #adc48d);
-
 }
 
 .inside {
@@ -156,7 +154,7 @@ li {
     min-height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
-    background: url('../images/left.jpeg');
+    background: url('../images/left.png');
     background-attachment: fixed;
     background-repeat: repeat-y;
 }
