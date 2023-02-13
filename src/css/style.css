@@ -150,3 +150,17 @@ li {
     color: white;
     text-shadow: black 0.1em 0.1em 0.5em;
 }
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url('../images/left.jpeg');
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+
+.foot {
+    margin-top: auto;
+}

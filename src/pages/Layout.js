@@ -12,7 +12,7 @@ import logo from '../images/logo.png'
 
 export default function Layout() {
     return (
-        <div>
+        <div className='flex-wrapper'>
             <Navbar expand="lg" variant='dark' className='nav_container'>
                 <Navbar.Brand href="/news" className='center'>
                     <img src={logo} alt="logo" className='nav_logo'></img>
@@ -35,7 +35,7 @@ export default function Layout() {
                 </Navbar.Collapse>
             </Navbar>
             <Outlet />
-            <footer>
+            <footer className='foot'>
                 <div className='footer_bg'>
                     <Row>
                         <Col sm={12} md={3} className='center'>
