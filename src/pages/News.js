@@ -1,4 +1,5 @@
 import { Col, Row, Button } from "react-bootstrap";
+import { news } from "../data/news_data";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -9,7 +10,21 @@ export default function News() {
         <div className="map_bg">
             <div className="map_container">
                 <div className="map_content">
-                    <h1>news news news news news news news news </h1>
+                    <h2 className="blue_word">最新消息</h2>
+                    <br />
+                    {news.map((data) => {
+                        return (
+                            <Row>
+                                <Col sm={12} md={3}>
+                                    {data.year}/{data.month}/{data.date}
+                                </Col>
+                                <Col sm={12} md={9}>
+                                    <a href={"/news/" + data["news_id"]}>{data.title}</a>
+                                    <hr />
+                                </Col>
+                            </Row>
+                        )
+                    })}
                 </div>
             </div>
         </div>

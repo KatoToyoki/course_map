@@ -14,7 +14,7 @@ export default function Layout() {
     return (
         <div>
             <Navbar expand="lg" variant='dark' className='nav_container'>
-                <Navbar.Brand href="/home" className='center'>
+                <Navbar.Brand href="/news" className='center'>
                     <img src={logo} alt="logo" className='nav_logo'></img>
                     &nbsp;
                     教育大數據微學程

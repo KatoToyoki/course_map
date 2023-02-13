@@ -19,9 +19,6 @@ export default function About() {
                         </Col>
                         <Col sm={12} md={9}>
                             教育部 資訊及科技教育司
-                        </Col>
-                        <Col sm={12} md={3} />
-                        <Col sm={12} md={9}>
                             <hr />
                         </Col>
 
@@ -30,9 +27,6 @@ export default function About() {
                         </Col>
                         <Col sm={12} md={9}>
                             國立臺北科技大學 資訊工程系、資訊財金管理系、師培中心
-                        </Col>
-                        <Col sm={12} md={3} />
-                        <Col sm={12} md={9}>
                             <hr />
                         </Col>
 
@@ -46,9 +40,6 @@ export default function About() {
                                 評估及系統設計開發，期能培育跨域教育資訊人才，促進教育領域更加精進的發展，
                                 提供更優質的學習環境。
                             </p>
-                        </Col>
-                        <Col sm={12} md={3} />
-                        <Col sm={12} md={9}>
                             <hr />
                         </Col>
 
@@ -61,11 +52,9 @@ export default function About() {
                                 電話：02-27712171分機4204<br />
                                 E-mail：<a href="mailto:wert119911@mail.ntut.edu.tw">wert119911@mail.ntut.edu.tw</a>
                             </p>
-                        </Col>
-                        <Col sm={12} md={3} />
-                        <Col sm={12} md={9}>
                             <hr />
                         </Col>
+
                         <Col sm={12} md={3}>
                             <b>團隊架構</b>
                         </Col>
