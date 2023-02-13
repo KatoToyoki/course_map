@@ -11,12 +11,12 @@ export default function Map() {
         <div className="map_bg">
             <div className="map_container">
                 <div className="map_content">
-                    <h1>
+                    <h2 className="blue_word">
                         課程資訊
-                    </h1>
+                    </h2>
                     <p>通過本微學程，最低應修10學分</p>
 
-                    <h5 className="blue_word"><b>核心能力</b></h5>
+                    <h5 className="yellow_word"><b>核心能力</b></h5>
                     <p>
                         教育大數據微學程主要會以四大核心能力作為培育重點，
                         同學們可以透過知識地圖看到該課程重點培育知能，選擇適合自己的課程。

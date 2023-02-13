@@ -2,7 +2,7 @@ import { Nav, Navbar, NavDropdown, Row, Col } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faBuilding, faSchool, faPerson, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,40 +39,67 @@ export default function Layout() {
             <footer>
                 <div className='footer_bg'>
                     <Row>
-                        <Col sm={12} md={6} className='center'>
+                        <Col sm={12} md={3} className='center'>
                             <div>
-                                <img src={logo} alt="logo" width="50%"></img>
+                                <img src={logo} alt="logo" width="100%"></img>
                             </div>
                         </Col>
-                        <Col sm={12} md={6}>
+                        <Col sm={1}></Col>
+                        <Col sm={12} md={8}>
                             <Row>
-                                <Col sm={9}>
-                                    <span>
-                                        <FontAwesomeIcon icon={faLocationDot} />
-                                        &nbsp;&nbsp;
-                                        106344 台北市忠孝東路三段一號<br />
-                                    </span>
+                                <Col sm={8}>
+                                    <Row>
+                                        <Col xs={1} className="center">
+                                            <FontAwesomeIcon icon={faBuilding} />
+                                        </Col>
+                                        <Col xs={11}>
+                                            指導單位：教育部 資訊及科技教育司<br />
+                                        </Col>
 
-                                    <span>
-                                        <FontAwesomeIcon icon={faPhone} />
-                                        &nbsp;
-                                        (886-2) 2771-2171<br /><br />
-                                    </span>
+                                        <Col xs={1} className="center">
+                                            <FontAwesomeIcon icon={faSchool} />
+                                        </Col>
+                                        <Col xs={11}>
+                                            執行單位：臺北科技大學<br />
+                                        </Col>
+
+                                        <Col xs={1} className="center">
+                                            <FontAwesomeIcon icon={faPerson} />
+                                        </Col>
+                                        <Col xs={11}>
+                                            聯絡窗口：資訊工程系 蔡宜蕙小姐<br />
+                                        </Col>
+
+                                        <Col xs={1} className="center">
+                                            <FontAwesomeIcon icon={faPhone} />
+                                        </Col>
+                                        <Col xs={11}>
+                                            聯絡電話：02-27712171分機4204<br />
+                                        </Col>
+
+                                        <Col xs={1} className="center">
+                                            <FontAwesomeIcon icon={faEnvelope} />
+                                        </Col>
+                                        <Col xs={11}>
+                                            電子信箱：wert119911@mail.ntut.edu.tw<br />
+                                        </Col>
+                                    </Row>
+
                                 </Col>
-                                <Col sm={3}>
-                                    <span className='pointer center'>
+                                <Col sm={4} className='center inside'>
+                                    <span className='pointer'>
                                         <a href="https://www.facebook.com/profile.php?id=100089037155805" className='facebook'>
                                             <FontAwesomeIcon icon={faFacebook} size="4x" />
                                         </a>
                                     </span>
                                 </Col>
                             </Row>
-                            <br /><hr />
+                            <hr />
                             Copyright ©2023 國立臺北科技大學
                         </Col>
                     </Row>
                 </div>
-            </footer>
+            </footer >
         </div >
     )
 }
