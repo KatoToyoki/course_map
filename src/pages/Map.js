@@ -12,9 +12,39 @@ export default function Map() {
             <div className="map_container">
                 <div className="map_content">
                     <h1>
-                        課程地圖
+                        課程資訊
                     </h1>
-                    <p className="yellow_word">通過本微學程，最低應修10學分</p>
+                    <p>通過本微學程，最低應修10學分</p>
+
+                    <h5 className="blue_word"><b>核心能力</b></h5>
+                    <p>
+                        教育大數據微學程主要會以四大核心能力作為培育重點，
+                        同學們可以透過知識地圖看到該課程重點培育知能，選擇適合自己的課程。
+                    </p>
+
+                    <div className="inside">
+                        <span className="cognition"><b>1</b></span> &nbsp;
+                        <b className="con_color">認知知能</b>
+                        ：能瞭解教育大數據之基礎概念與在數位學習上的應用。
+                    </div>
+                    <div className="inside">
+                        <span className="knowledge"><b>2</b></span> &nbsp;
+                        <b className="kno_color">知識知能</b>
+                        ：能瞭解教育面或大數據分析面之理論知識與背景知識。
+                    </div>
+                    <div className="inside">
+                        <span className="technology"><b>3</b></span> &nbsp;
+                        <b className="tec_color">技術知能</b>
+                        ：能撰寫程式語言或應用軟體進行教育大數據分析。
+                    </div>
+                    <div className="inside">
+                        <span className="value"><b>4</b></span> &nbsp;
+                        <b className="val_color">價值知能</b>
+                        ：能使用數據分析方法模型解決教育相關問題、創造價值。
+                    </div>
+
+
+
                     <br />
                     <div>
                         {category.map((data) => {
@@ -39,36 +69,36 @@ export default function Map() {
 
                                             function dot(variable, name) {
                                                 if (variable === "") {
-                                                    return <b className='blank'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>;
+                                                    return <b className='blank'>&nbsp;&nbsp;</b>;
                                                 }
                                                 return <b className={name}>{variable}</b>;
                                             }
 
                                             return (
                                                 <Row>
-                                                    <Col sm={12} md={6} className='map_inside '>
+                                                    <Col sm={12} md={7} className='map_inside '>
                                                         <Row>
 
-                                                            <Col sm={10} className='map_inside'>
+                                                            <Col sm={9} className='map_inside'>
                                                                 <a href={"/map/course/" + datas["course_id"]} className='map_a'>
                                                                     <div class="map_btn">
                                                                         <b>{datas.course_name}</b>
                                                                     </div>
                                                                 </a>
                                                             </Col>
-                                                            <Col sm={2} className='center'>
-                                                                <div className="credit blue_green map_inside">
-                                                                    {datas.credit}
+                                                            <Col sm={3} className='center'>
+                                                                <div className="green_word map_inside">
+                                                                    <b>{datas.credit}學分</b>
                                                                 </div>
                                                             </Col>
                                                         </Row>
                                                     </Col>
-                                                    <Col sm={12} md={6} className='map_inside center'>
+                                                    <Col sm={12} md={5} className='map_inside center disappear'>
                                                         <Row className="center ">
-                                                            <Col sm={12} md={3} className="center dot">{cognition}</Col>
-                                                            <Col sm={12} md={3} className="center dot">{knowledge}</Col>
-                                                            <Col sm={12} md={3} className="center dot">{technology}</Col>
-                                                            <Col sm={12} md={3} className="center dot">{value}</Col>
+                                                            <Col sm={3} className=" dot">{cognition}</Col>
+                                                            <Col sm={3} className=" dot">{knowledge}</Col>
+                                                            <Col sm={3} className=" dot">{technology}</Col>
+                                                            <Col sm={3} className=" dot">{value}</Col>
                                                         </Row>
                                                     </Col>
                                                 </Row>

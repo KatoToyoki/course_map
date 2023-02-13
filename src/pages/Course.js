@@ -61,7 +61,7 @@ export default function Course() {
                     </Col>
 
                     <Col sm={4} className='inside'>
-                        開課時間
+                        開課學期
                     </Col>
                     <Col sm={8} className='inside'>
                         {data.course_time.map((time) => {
@@ -70,14 +70,28 @@ export default function Course() {
                                     <Col sm={12}>
                                         {time.semester}
                                     </Col>
+                                </Row>
+                            );
+                        })}
+                    </Col>
+                    <Col sm={12} md={4}></Col>
+                    <Col sm={12} md={8}>
+                        <hr />
+                    </Col>
+
+
+                    <Col sm={4} className='inside'>
+                        開課時間
+                    </Col>
+                    <Col sm={8} className='inside'>
+                        {data.course_time.map((time) => {
+                            return (
+                                <Row>
                                     <Col sm={6}>
                                         課號：{time.id}
                                     </Col>
                                     <Col sm={6}>
                                         {time.day} &nbsp; {time.time}
-                                    </Col>
-                                    <Col sm={12}>
-                                        <br />
                                     </Col>
                                 </Row>
                             );
@@ -93,6 +107,28 @@ export default function Course() {
                     </Col>
                     <Col sm={8} className='inside'>
                         {data.credit}學分，每週{data.credit}小時
+                    </Col>
+                    <Col sm={12} md={4}></Col>
+                    <Col sm={12} md={8}>
+                        <hr />
+                    </Col>
+
+                    <Col sm={4} className='inside'>
+                        課程概述
+                    </Col>
+                    <Col sm={8} className='inside'>
+                        <p>{data.course_info_ch}</p>
+                    </Col>
+                    <Col sm={12} md={4}></Col>
+                    <Col sm={12} md={8}>
+                        <hr />
+                    </Col>
+
+                    <Col sm={4} className='inside'>
+                        English Description
+                    </Col>
+                    <Col sm={8} className='inside'>
+                        <p>{data.course_info_en}</p>
                     </Col>
                     <Col sm={12} md={4}></Col>
                     <Col sm={12} md={8}>

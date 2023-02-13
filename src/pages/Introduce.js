@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../css/style.css';
 
-import course_pic from '../images/001.png';
-import order from '../images/002.png'
+import course_pic from '../images/limit.png';
+import order from '../images/step.png'
 
 export default function Introduce() {
     let base = category[0].inner_data;
@@ -63,6 +63,7 @@ export default function Introduce() {
 
             {/* the course anchors (in order not to be covered by the navbar) */}
             <span id="course" />
+
             <div className="map_container">
                 <div className="map_content">
                     <div >
@@ -223,8 +224,7 @@ export default function Introduce() {
                             </li>
                         </ol>
 
-                        {/* the future_jobs anchors (in order not to be covered by the navbar) */}
-                        <span id="future_jobs" />
+
 
                         <h5 className="yellow_word">相關網頁</h5>
                         <ul>
@@ -240,6 +240,9 @@ export default function Introduce() {
                                 <a href="https://aps.ntut.edu.tw/course/tw/QueryCurrPage.jsp">本校課程查詢系統</a>
                             </li>
 
+                            {/* the future_jobs anchors (in order not to be covered by the navbar) */}
+                            <span id="future_jobs" />
+
                             <li>
                                 <a href="https://ustp.ntpu.edu.tw/info/14">北聯大微學程說明</a>
                             </li>
@@ -252,16 +255,25 @@ export default function Introduce() {
                         <h2 className="blue_word">
                             就業前景
                         </h2>
-                        <br />
-
-                        {/* the learning_material anchors (in order not to be covered by the navbar) */}
-                        <span id="learning_material" />
-
                         <p>
-                            一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字
-                            一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字
-                            一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字一些介紹文字
+                            教育領域能從事大數據分析的人才極缺，可從事的工作包括：
                         </p>
+                        <ol>
+                            <li>
+                                大學校務研究辦公室數據分析師：負責收集、分析校務行政數據並將結果匯報給校務決策層，以協助校內各項校務決策，任職機構為國內外各大學校務研究辦公室。
+                            </li>
+
+                            <li>
+                                國內外教育部門數據分析師：負責國家或國際層級的數據分析工作，以支持政府或是國際組織評估教育系統的運作效率，並影響教育經費的分配，任職機構包括國家教育研究院、中央研究院、世界銀行以及亞洲開發銀行。
+                            </li>
+
+                            {/* the learning_material anchors (in order not to be covered by the navbar) */}
+                            <span id="learning_material" />
+
+                            <li>
+                                企業教育部門產品開發工程師：負責開發與教育服務相關的各種人工智能服務及產品，例如Apple、微軟公司內部均有負責開發適性化教學的教育產品開發部門。
+                            </li>
+                        </ol>
                     </div>
 
                     <div>

@@ -63,7 +63,7 @@ li {
 }
 
 .green_word {
-    color: #adc48d;
+    color: #91b55f;
 }
 
 .light_blue {
@@ -80,6 +80,11 @@ li {
     background-color: #5bc4c5;
     border-color: #5bc4c5;
 }
+
+.blue_green_word {
+    color: #5bc4c5;
+}
+
 
 .gradient_bg {
     background: linear-gradient(-70deg, #41bee1, #adc48d);
@@ -132,7 +137,7 @@ li {
 }
 
 .facebook:hover {
-    color: #45a0e0;
+    color: #2a88cb;
     transition-duration: .5s;
 }
 
