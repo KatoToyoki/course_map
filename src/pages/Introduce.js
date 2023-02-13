@@ -70,7 +70,6 @@ export default function Introduce() {
                         <h2 className="blue_word">
                             教育大數據微學程
                         </h2>
-                        <br />
                         <p>
                             位於修讀大學／研究所的階段，同學如何選擇適合自己且對未來有幫助的課程是一件很重要的事，
                             除了自己原本的主修專業科系課程，跨域人才是各行各業的需求趨勢，但是對於同學們而言，
@@ -100,7 +99,6 @@ export default function Introduce() {
                         <h2 className="blue_word">
                             修讀微學程
                         </h2>
-                        <br />
 
                         <h5 className="yellow_word">修讀對象</h5>
                         <p>
@@ -281,8 +279,6 @@ export default function Introduce() {
                         <h2 className="blue_word">
                             學習資源
                         </h2>
-                        <br />
-
                         <p>
                             修讀教育大數據微學程的同學們即使沒有資訊或數據分析相關基礎，
                             透過本微學程豐富的學習資源，也可以順利完成修讀喔！

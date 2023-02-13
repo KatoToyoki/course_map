@@ -58,7 +58,7 @@ export default function QA() {
                         {questions.map((data) => {
                             return (
                                 <Col sm={12} md={6} className="inside">
-                                    <h5>#{data.id}</h5>
+                                    <h5 className="yellow_word">#{data.id}</h5>
                                     <p>
                                         <b>Q：</b>{data.q}
                                     </p>

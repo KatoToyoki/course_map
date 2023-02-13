@@ -115,9 +115,9 @@ export const category = [
                 course_info_ch: "",
                 course_info_en: "",
                 cognition: "",
-                knowledge: "1",
-                technology: "2",
-                value: "3",
+                knowledge: "2",
+                technology: "3",
+                value: "4",
                 course_depiction: "",
                 course_time: [
                     {

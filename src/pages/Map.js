@@ -1,5 +1,7 @@
 import { Col, Row, Button } from "react-bootstrap";
-import { category } from '../data/map_data'
+import { category } from '../data/map_data';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMousePointer } from "@fortawesome/free-solid-svg-icons";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -83,7 +85,7 @@ export default function Map() {
                                                             <Col sm={6} className='map_inside'>
                                                                 <a href={"/map/course/" + datas["course_id"]} className='map_a'>
                                                                     <div class="map_btn">
-                                                                        <b>{datas.course_name}</b>
+                                                                        <b>{datas.course_name}</b> &nbsp; <FontAwesomeIcon icon={faMousePointer} />
                                                                     </div>
                                                                 </a>
                                                             </Col>
