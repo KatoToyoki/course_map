@@ -24,13 +24,13 @@ export default function Layout() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/news">最新消息</Nav.Link>
-                        <Nav.Link href="/introduce">認識微學程</Nav.Link>
-                        <Nav.Link href="/map">課程資訊</Nav.Link>
-                        <Nav.Link href="/qa">修讀QA</Nav.Link>
-                        <Nav.Link href="/about">關於本計畫</Nav.Link>
-                        <Nav.Link href="/result">計畫成果</Nav.Link>
-                        <Nav.Link href="/download">檔案下載</Nav.Link>
+                        <Nav.Link href="/news" className='white_word'>最新消息</Nav.Link>
+                        <Nav.Link href="/introduce" className='white_word'>認識微學程</Nav.Link>
+                        <Nav.Link href="/map" className='white_word'>課程資訊</Nav.Link>
+                        <Nav.Link href="/qa" className='white_word'>修讀QA</Nav.Link>
+                        <Nav.Link href="/about" className='white_word'>關於本計畫</Nav.Link>
+                        <Nav.Link href="/result" className='white_word'>計畫成果</Nav.Link>
+                        <Nav.Link href="/download" className='white_word'>檔案下載</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
