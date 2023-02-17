@@ -1,6 +1,5 @@
 import { Col, Row, Button } from "react-bootstrap";
 import { news } from "../data/news_data";
-import logo from 'images/logo.png'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -50,7 +49,6 @@ export default function NewsEach() {
 
                 </h2>
                 <br />
-                <img src={logo}></img>
                 <p>
                     {data.content}
                 </p>
