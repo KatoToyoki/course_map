@@ -28,7 +28,7 @@ export const category = [
                     並能學以致用解決基本的問題。\n",
                 course_time: [
                     {
-                        semester: "111學年第二學期（擇一）",
+                        semester: "111學年第二學期",
                         id: "317452",
                         day: "週一",
                         time: "08:00 - 10:00"

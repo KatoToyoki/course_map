@@ -1,5 +1,6 @@
 import { Col, Row, Button } from "react-bootstrap";
 import { news } from "../data/news_data";
+import logo from 'images/logo.png'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -11,7 +12,6 @@ export default function NewsEach() {
         audio = aud(data.audio),
         video = vid(data.video),
         image = img(data.image);
-
 
     function findData(id) {
         for (var i = 0; i < news.length; i++) {
@@ -47,8 +47,10 @@ export default function NewsEach() {
             <div className="content">
                 <h2 className="blue_word">
                     {data.title}
+
                 </h2>
                 <br />
+                <img src={logo}></img>
                 <p>
                     {data.content}
                 </p>

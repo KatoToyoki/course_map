@@ -1,7 +1,7 @@
 import { Col, Row, Button } from "react-bootstrap";
 import { category } from '../data/map_data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMousePointer } from "@fortawesome/free-solid-svg-icons";
+import { faMousePointer, faEye, faScroll, faGear, faGem } from "@fortawesome/free-solid-svg-icons";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -23,36 +23,36 @@ export default function Map() {
                     同學們可以透過知識地圖看到該課程重點培育知能，選擇適合自己的課程。
                 </p>
 
-                <div className="inside">
-                    <span className="cognition"><b>1</b></span> &nbsp;
-                    <b className="con_color">認知知能</b>
+                <div className="">
+                    <b className="con_color"><FontAwesomeIcon icon={faEye} /> &nbsp;認知知能</b>
                     ：能瞭解教育大數據之基礎概念與在數位學習上的應用。
                 </div>
-                <div className="inside">
-                    <span className="knowledge"><b>2</b></span> &nbsp;
-                    <b className="kno_color">知識知能</b>
+                <br />
+                <div className="">
+                    <b className="kno_color"><FontAwesomeIcon icon={faScroll} /> &nbsp;知識知能</b>
                     ：能瞭解教育面或大數據分析面之理論知識與背景知識。
                 </div>
-                <div className="inside">
-                    <span className="technology"><b>3</b></span> &nbsp;
-                    <b className="tec_color">技術知能</b>
+                <br />
+                <div className="">
+                    <b className="tec_color"><FontAwesomeIcon icon={faGear} /> &nbsp;技術知能</b>
                     ：能撰寫程式語言或應用軟體進行教育大數據分析。
                 </div>
-                <div className="inside">
-                    <span className="value"><b>4</b></span> &nbsp;
-                    <b className="val_color">價值知能</b>
+                <br />
+                <div className="">
+                    <b className="val_color"><FontAwesomeIcon icon={faGem} /> &nbsp;價值知能</b>
                     ：能使用數據分析方法模型解決教育相關問題、創造價值。
                 </div>
 
-
-
                 <br />
+                <h2 className="blue_word">
+                    課程地圖
+                </h2>
                 <div>
                     {category.map((data) => {
                         return (
-                            <Row>
-                                <Col sm={12} md={2} className='map_inside'>
-                                    <h4>{data.difficulty}</h4>
+                            <Row className="inside">
+                                <Col sm={12} md={2} >
+                                    <h5>{data.difficulty}</h5>
                                     {data.depiction}
                                 </Col>
                                 <Col sm={12} md={10}>
@@ -65,22 +65,43 @@ export default function Map() {
                                             technology = datas.technology,
                                             value = datas.value;
 
-                                        cognition = dot(cognition, "cognition");
-                                        knowledge = dot(knowledge, "knowledge");
-                                        technology = dot(technology, "technology");
-                                        value = dot(value, "value");
+                                        cognition = cog(cognition);
+                                        knowledge = kno(knowledge);
+                                        technology = tec(technology);
+                                        value = val(value);
 
-                                        function dot(variable, name) {
-                                            if (variable === "") {
-                                                return <b className='blank'>&nbsp;&nbsp;</b>;
+                                        function cog(cognition) {
+                                            if (cognition === "") {
+                                                return <div> &nbsp;&nbsp;&nbsp;</div>
                                             }
-                                            return <b className={name}>{variable}</b>;
+                                            return <b className="con_color"><FontAwesomeIcon icon={faEye} /></b>
+                                        }
+
+                                        function kno(knowledge) {
+                                            if (knowledge === "") {
+                                                return <div> &nbsp;&nbsp;&nbsp;</div>
+                                            }
+                                            return <b className="kno_color"><FontAwesomeIcon icon={faScroll} /></b>
+                                        }
+
+                                        function tec(technology) {
+                                            if (technology === "") {
+                                                return <div> &nbsp;&nbsp;&nbsp;</div>
+                                            }
+                                            return <b className="tec_color"><FontAwesomeIcon icon={faGear} /></b>
+                                        }
+
+                                        function val(value) {
+                                            if (value === "") {
+                                                return <div> &nbsp;&nbsp;&nbsp;</div>
+                                            }
+                                            return <b className="val_color"><FontAwesomeIcon icon={faGem} /></b>
                                         }
 
                                         return (
                                             <Row>
-                                                <Col sm={12} md={9} className='map_inside'>
-                                                    <Row className="inside">
+                                                <Col sm={12} md={10} className='map_inside'>
+                                                    < Row className="inside" >
                                                         <Col sm={6} className='map_inside'>
                                                             <a href={"/map/course/" + datas["course_id"]} className='map_a'>
                                                                 <div className="map_btn">
@@ -88,33 +109,33 @@ export default function Map() {
                                                                 </div>
                                                             </a>
                                                         </Col>
-                                                        <Col sm={2} className='center'>
+                                                        <Col xs={2} className='center'>
                                                             <b>{datas.credit}學分</b>
                                                         </Col>
-                                                        <Col sm={4} className='vertical inside'>
-                                                            <div className="green_word ">
+                                                        <Col xs={4} className='center inside'>
+                                                            <div className="">
                                                                 <b>{datas.course_time[0].semester}</b>
                                                             </div>
                                                         </Col>
                                                     </Row>
                                                 </Col>
-                                                <Col sm={12} md={3} className=' center disappear'>
+                                                <Col sm={12} md={2} className=' center'>
                                                     <Row className="center ">
-                                                        <Col sm={3} className=" dot">{cognition}</Col>
-                                                        <Col sm={3} className=" dot">{knowledge}</Col>
-                                                        <Col sm={3} className=" dot">{technology}</Col>
-                                                        <Col sm={3} className=" dot">{value}</Col>
+                                                        <Col xs={3} className=" dot">{cognition}</Col>
+                                                        <Col xs={3} className=" dot">{knowledge}</Col>
+                                                        <Col xs={3} className=" dot">{technology}</Col>
+                                                        <Col xs={3} className=" dot">{value}</Col>
                                                     </Row>
                                                 </Col>
                                             </Row>
                                         );
                                     })}
                                 </Col>
-                            </Row>
+                            </Row >
                         );
                     })}
                 </div >
-            </div>
+            </div >
         </div >
     )
 }
