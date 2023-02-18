@@ -43,18 +43,6 @@ export default function About() {
                     </Col>
 
                     <Col sm={12} md={3}>
-                        <b>聯絡窗口</b>
-                    </Col>
-                    <Col sm={12} md={9}>
-                        <p>
-                            (北科)教育大數據微學程計畫 蔡宜蕙小姐<br />
-                            電話：02-27712171分機4204<br />
-                            E-mail：<a href="mailto:wert119911@mail.ntut.edu.tw">wert119911@mail.ntut.edu.tw</a>
-                        </p>
-                        <hr />
-                    </Col>
-
-                    <Col sm={12} md={3}>
                         <b>團隊架構</b>
                     </Col>
                     <Col sm={12} md={9}>

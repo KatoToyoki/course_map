@@ -68,23 +68,32 @@ export default function Introduce() {
                 <div className="content">
                     <div >
                         <h2 className="blue_word">
-                            教育大數據微學程
+                            認識微學程
                         </h2>
-                        <p>
+                        <Row>
+                            <Col xs={4} className='vertical'>
+                                <h4>教育大數據微學程</h4>
+                            </Col>
+                            <Col xs={8} className='inside'>
+                                <hr />
+                            </Col>
+                        </Row>
+                        <div className="center">
+                            <img src={course_pic} width="70%"></img>
+                        </div>
+                        <p className="inside">
                             位於修讀大學／研究所的階段，同學如何選擇適合自己且對未來有幫助的課程是一件很重要的事，
                             除了自己原本的主修專業科系課程，跨域人才是各行各業的需求趨勢，但是對於同學們而言，
                             如何在有限的就學時間內完成第二專長的修讀，可能會需要大量時間甚至超修學分費才可能完成修讀。
                             因此選擇修讀「微學程」成為一個具備高度彈性且良好的跨域學習途徑，同學僅需要重新檢視
                             原本每學期修讀的課程，加入選修微學程所規範的課程，修讀完畢可申請證書乙紙。
                         </p>
-                        <div className="center">
-                            <img src={course_pic} width="100%"></img>
-                        </div>
+
 
                         {/* the taking courses anchors (in order not to be covered by the navbar) */}
                         <span id="taking_course" />
 
-                        <p>
+                        <p className="inside">
                             教育大數據微學程（簡稱本微學程）依循相關規範課程修讀最低僅需10學分，
                             本微學程架構主要分為「基礎、進階、實務」三個階段，帶領同學由淺入深的學習，
                             「基礎課程」著重於資訊與數據分析的能力培育；「進階課程」帶入資訊與數據能力於教育層面的應用，
@@ -96,23 +105,29 @@ export default function Introduce() {
 
                     <div>
                         <br />
-                        <h2 className="blue_word">
-                            修讀微學程
-                        </h2>
+                        <Row>
+                            <Col xs={3} className='vertical'>
+                                <h4>修讀微學程</h4>
+                            </Col>
+                            <Col xs={9} className='inside'>
+                                <hr />
+                            </Col>
+                        </Row>
+
 
                         <h5 className="orange_word">修讀對象</h5>
-                        <p>
+                        <p className="inside">
                             本微學程開放【臺北聯合大學系統】在校生跨校選讀，包括臺北科大(主辦學校)、臺北大學、臺北醫大、臺灣海大。
                             由資工系的資訊專業、資財系的分析專業、師培中心的教育專業，三方師資共同開發培育教育資訊人才之跨領域課程。
                         </p>
 
                         <h5 className="orange_word">修讀流程</h5>
                         <div className="center">
-                            <img src={order} width="100%"></img>
+                            <img src={order} width="70%"></img>
                         </div>
 
                         <h5 className="orange_word">如何修讀</h5>
-                        <p>
+                        <p className="inside">
                             北科學生修讀：欲修讀微學程之北科學生，依本校每學期選課開放時間(含加退選)內完成選課。
                             跨校學生修讀：北聯大系統之學生，同學應先填具本校「校際選課申請表-外校生至本校選課用」，
                             經他校所屬系、所、學位學程主管及教務處核可後，依規定之時間、程序，辦理本校選課手續，
@@ -120,11 +135,11 @@ export default function Introduce() {
                         </p>
 
                         <h5 className="orange_word">修讀門檻</h5>
-                        <p>
+                        <p className="inside">
                             同學可自行規劃修讀科目，但至少需完成修讀本微學程基礎課程2門課、進階課程2門課、實務課程1門課，
                             且總應修學分數合計至少需達10學分。
                         </p>
-                        <Row>
+                        <Row className="inside">
                             <Col sm={12} md={4} className='map_inside'>
                                 <div className="blue inside">
                                     <div className="white map_inside">
@@ -250,66 +265,81 @@ export default function Introduce() {
 
                     <div>
                         <br />
-                        <h2 className="blue_word">
-                            就業前景
-                        </h2>
-                        <p>
+                        <Row>
+                            <Col xs={3} className='vertical'>
+                                <h4>就業前景</h4>
+                            </Col>
+                            <Col xs={9} className='inside'>
+                                <hr />
+                            </Col>
+                        </Row>
+
+                        <p className="inside">
                             教育領域能從事大數據分析的人才極缺，可從事的工作包括：
                         </p>
                         <ol>
                             <li>
-                                大學校務研究辦公室數據分析師：負責收集、分析校務行政數據並將結果匯報給校務決策層，以協助校內各項校務決策，任職機構為國內外各大學校務研究辦公室。
+                                <b>大學校務研究辦公室數據分析師</b><br />
+                                負責收集、分析校務行政數據並將結果匯報給校務決策層，以協助校內各項校務決策，任職機構為國內外各大學校務研究辦公室。
                             </li>
 
                             <li>
-                                國內外教育部門數據分析師：負責國家或國際層級的數據分析工作，以支持政府或是國際組織評估教育系統的運作效率，並影響教育經費的分配，任職機構包括國家教育研究院、中央研究院、世界銀行以及亞洲開發銀行。
+                                <b>國內外教育部門數據分析師</b><br />
+                                負責國家或國際層級的數據分析工作，以支持政府或是國際組織評估教育系統的運作效率，並影響教育經費的分配，任職機構包括國家教育研究院、中央研究院、世界銀行以及亞洲開發銀行。
                             </li>
 
                             {/* the learning_material anchors (in order not to be covered by the navbar) */}
                             <span id="learning_material" />
 
                             <li>
-                                企業教育部門產品開發工程師：負責開發與教育服務相關的各種人工智能服務及產品，例如Apple、微軟公司內部均有負責開發適性化教學的教育產品開發部門。
+                                <b>企業教育部門產品開發工程師</b><br />
+                                負責開發與教育服務相關的各種人工智能服務及產品，例如Apple、微軟公司內部均有負責開發適性化教學的教育產品開發部門。
                             </li>
                         </ol>
                     </div>
 
                     <div>
                         <br />
-                        <h2 className="blue_word">
-                            學習資源
-                        </h2>
-                        <p>
+                        <Row>
+                            <Col xs={3} className='vertical'>
+                                <h4>學習資源</h4>
+                            </Col>
+                            <Col xs={9} className='inside'>
+                                <hr />
+                            </Col>
+                        </Row>
+
+                        <p className="inside">
                             修讀教育大數據微學程的同學們即使沒有資訊或數據分析相關基礎，
                             透過本微學程豐富的學習資源，也可以順利完成修讀喔！
                         </p>
                         <ul>
                             <li>
-                                共授專家分享：每門課程會邀請產業講師或專家學者進行分享，提供豐富的產業知識。
+                                <b>共授專家分享</b>：每門課程會邀請產業講師或專家學者進行分享，提供豐富的產業知識。
                             </li>
 
                             <li>
-                                參訪講座活動：不定期舉辦企業參訪、專題講座等豐富活動，增添同學們的學習視野。
+                                <b>參訪講座活動</b>：不定期舉辦企業參訪、專題講座等豐富活動，增添同學們的學習視野。
                             </li>
 
                             <li>
-                                交流學習聚會：不定期舉辦交流學習聚會，讓同學間分享學習進度或教育議題等。
+                                <b>交流學習聚會</b>：不定期舉辦交流學習聚會，讓同學間分享學習進度或教育議題等。
                             </li>
 
                             <li>
-                                多元輔導機制：每門課程設置兩名助教，於每週固定時段提供課外輔導，提供給有需要的同學。
+                                <b>多元輔導機制</b>：每門課程設置兩名助教，於每週固定時段提供課外輔導，提供給有需要的同學。
                             </li>
 
                             <li>
-                                網路交流平臺：同學可以透過臉書/line社群發問，得到需要的協助與回應。
+                                <b>網路交流平臺</b>：同學可以透過臉書/line社群發問，得到需要的協助與回應。
                             </li>
 
                             <li>
-                                召開學生研習：能力不足的同學可以透過同儕之間的相互指導，跟上課程內容。
+                                <b>召開學生研習</b>：能力不足的同學可以透過同儕之間的相互指導，跟上課程內容。
                             </li>
 
                             <li>
-                                提供課程地圖：讓同學得到更明確的修課指引，安排修讀時間設立目標促進修習。
+                                <b>提供課程地圖</b>：讓同學得到更明確的修課指引，安排修讀時間設立目標促進修習。
                             </li>
                         </ul>
                     </div>

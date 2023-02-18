@@ -60,7 +60,7 @@ export default function QA() {
                                 <Col sm={12} md={6} className="inside">
                                     <h5 className="orange_word">#{data.id}</h5>
                                     <p>
-                                        <b>Q：</b>{data.q}
+                                        <b>Q：{data.q}</b>
                                     </p>
 
                                     <p>

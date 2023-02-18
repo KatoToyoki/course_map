@@ -13,46 +13,37 @@ export default function Map() {
         <div className="c_container">
             <div className="content">
                 <h2 className="blue_word">
-                    課程資訊
+                    知識地圖
                 </h2>
-                <p>通過本微學程，最低應修10學分</p>
+                <p className="inside">通過本微學程，最低應修10學分</p>
 
                 <h5 className="orange_word"><b>核心能力</b></h5>
-                <p>
+                <p className="inside">
                     教育大數據微學程主要會以四大核心能力作為培育重點，
                     同學們可以透過知識地圖看到該課程重點培育知能，選擇適合自己的課程。
                 </p>
 
-                <div className="">
+                <p className="inside">
                     <b className="con_color"><FontAwesomeIcon icon={faEye} /> &nbsp;認知知能</b>
                     ：能瞭解教育大數據之基礎概念與在數位學習上的應用。
-                </div>
-                <br />
-                <div className="">
+                    <br />
                     <b className="kno_color"><FontAwesomeIcon icon={faScroll} /> &nbsp;知識知能</b>
                     ：能瞭解教育面或大數據分析面之理論知識與背景知識。
-                </div>
-                <br />
-                <div className="">
+                    <br />
                     <b className="tec_color"><FontAwesomeIcon icon={faGear} /> &nbsp;技術知能</b>
                     ：能撰寫程式語言或應用軟體進行教育大數據分析。
-                </div>
-                <br />
-                <div className="">
+                    <br />
                     <b className="val_color"><FontAwesomeIcon icon={faGem} /> &nbsp;價值知能</b>
                     ：能使用數據分析方法模型解決教育相關問題、創造價值。
-                </div>
+                </p>
 
-                <br />
-                <h2 className="blue_word">
-                    課程地圖
-                </h2>
+
                 <div>
                     {category.map((data) => {
                         return (
-                            <Row className="inside">
+                            <Row>
                                 <Col sm={12} md={2} >
-                                    <h5>{data.difficulty}</h5>
+                                    <h5><b>{data.difficulty}</b></h5>
                                     {data.depiction}
                                 </Col>
                                 <Col sm={12} md={10}>
@@ -101,7 +92,7 @@ export default function Map() {
                                         return (
                                             <Row>
                                                 <Col sm={12} md={10} className='map_inside'>
-                                                    < Row className="inside" >
+                                                    < Row >
                                                         <Col sm={6} className='map_inside'>
                                                             <a href={"/map/course/" + datas["course_id"]} className='map_a'>
                                                                 <div className="map_btn">
