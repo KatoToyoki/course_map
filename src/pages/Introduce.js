@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../css/style.css';
 
-import course_pic from '../images/limit.png';
-import order from '../images/step.png'
+import course_pic from '../images/limit.jpg';
+import order from '../images/step.jpg'
 
 export default function Introduce() {
     let base = category[0].inner_data;

@@ -90,7 +90,11 @@ export const category = [
                 course_name: "教育數據分析與邏輯思維",
                 course_id: "02",
                 credit: "3",
-                course_info_ch: "",
+                course_info_ch: "本課程在使學生了解各種不同的資訊科技(Information Technology)\
+                與管理資訊系統間的關連性，並結合教育機構導入資料分析議題，實際應用所教授的IT技術進行學術研究。\
+                藉由IT技術的應用演練，讓學生將實際進行問題分析、模型發展、系統開發、模擬實驗及最後的研究結論與模型驗證。\
+                提升學生獨立思考與解決問題之能力，培養科學的態度與學術研究的知識。",
+
                 course_info_en: "",
                 cognition: "1",
                 knowledge: "",
@@ -99,7 +103,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
-                        semester: "",
+                        semester: "112學年第一學期",
                         id: "",
                         day: "",
                         time: ""
@@ -112,7 +116,15 @@ export const category = [
                 course_name: "教育統計學",
                 course_id: "03",
                 credit: "2",
-                course_info_ch: "",
+                course_info_ch: "本門課程旨在提供給尚未具有基礎統計基礎的學生，熟悉並能夠應用統計分析技術在解決教育\
+                場域中所出現的教育研究問題。課程第一部份將從瞭解統計的基本概念開始，讓學生熟悉教育研究的情境。課程第二部份\
+                以迴歸分析做為分析技術的主軸，教授學生利用現有的教育領域數據資料庫，依照數據結構與研究問題的特性，選擇合\
+                適模型執行各項數據分析工作。第三部份將介紹多變量分析的理論與應用，讓學生得以更進一步認識除了教育行政數據之外，\
+                同時熟悉教育測驗領域中潛在變項的觀念以及應用。完成本門課程的學生將能熟悉教育領域中主要與最新進的統計分析技術，\
+                並同時掌握透過編寫程式的方式執行數據分析的能力。本課程授課教師有長達五年協助並輔導各校發展校務研究的經驗，\
+                綜合各校的評價選擇Stata工具於校務研究使用，具有以下三點優勢：數據清理、功能具擴充性、結合社會科學領域數據結構\
+                以及計算社會科學的優勢。本學程需要一套r接近R和Python這種開源性的程式語言分析軟體並兼具簡單易學的作業平台，將以Stata作為作業平台。",
+
                 course_info_en: "",
                 cognition: "",
                 knowledge: "2",
@@ -121,7 +133,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
-                        semester: "",
+                        semester: "112學年第一學期",
                         id: "",
                         day: "",
                         time: ""
@@ -183,7 +195,14 @@ export const category = [
                 course_name: "校務研究：教育場域數據分析實作",
                 course_id: "05",
                 credit: "3",
-                course_info_ch: "",
+                course_info_ch: "校務研究是教育數據分析在教育場域的應用，在真實的教育場域中\
+                應用所學的教育數據分析技術，並針對所服務的教育機構，提供有科學意義且淺顯易懂的數據分析報告，\
+                以支持教育機構進行校務運作與教學活動的改善。本門課程首先讓學生認識各職能部門的核心項目及衍伸\
+                的校務研究議題；其次瞭解教育場域中因應各項校務與教學活動所出現的數據結構類型；\
+                接著教授學生使用教育場域中的真實數據，執行包括數據清理、數據調處、數據水平與垂直整併等步驟，\
+                以獨立生成有意義的數據結構；最後則聚焦在教育方案的效果分析，以及將數據分析資料視覺化，\
+                輔以淺顯易懂的數據解讀報告，增加學員對於數據分析結果的瞭解。",
+
                 course_info_en: "",
                 cognition: "1",
                 knowledge: "2",
@@ -192,7 +211,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
-                        semester: "",
+                        semester: "112學年第一學期",
                         id: "",
                         day: "",
                         time: ""
@@ -205,7 +224,10 @@ export const category = [
                 course_name: "教育數據探勘與應用",
                 course_id: "06",
                 credit: "3",
-                course_info_ch: "",
+                course_info_ch: "本課程主要介紹資料探勘概念與原理，包括: 資料前處理、關聯分析、分類、分群，\
+                並運用實際工具如: Weka, Python等，針對教育大數據進行分析。透過程式練習以及期末專題，\
+                能讓學生深入理解教育資料分析的基本原理以及實際工具的應用。",
+
                 course_info_en: "",
                 cognition: "1",
                 knowledge: "",
@@ -214,7 +236,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
-                        semester: "",
+                        semester: "112學年第一學期",
                         id: "",
                         day: "",
                         time: ""
@@ -271,7 +293,14 @@ export const category = [
                 course_name: "學習分析於PBL實務專題製作",
                 course_id: "08",
                 credit: "3",
-                course_info_ch: "",
+                course_info_ch: "本課程強調資訊分析理論與實務的結合用，因此課程中會逐步教導學生相關\
+                分析理論與演算法，透過Rapidminer，可以讓學生輕鬆在操作元件拖拉之中，完成一個妥善的分析流程，\
+                並可以產生多樣化的視覺化呈現，從實作中強化操作相關軟體的基本能力。並結合教育機構與產業引導實際\
+                場域發生之問題或整合校務研究資料於專題課程，參與校務分析研究：考量資安的個資議題，擬將校內部份\
+                去識別化後之資料，經過編碼變造處理後於課堂使用，讓學生將實際進行問題分析、模型發展、系統開發、\
+                模擬實驗及最後的研究結論與模型驗證。最後，透過特定主題教案的設計，讓學習者進一步的去思考數據\
+                分析的邏輯，從教學者的角度更深入理解教育大數據分析。",
+
                 course_info_en: "",
                 cognition: "1",
                 knowledge: "",
@@ -280,7 +309,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
-                        semester: "",
+                        semester: "112學年第一學期",
                         id: "",
                         day: "",
                         time: ""
@@ -293,7 +322,11 @@ export const category = [
                 course_name: "應用人工智慧於教育專題製作",
                 course_id: "09",
                 credit: "3",
-                course_info_ch: "",
+                course_info_ch: "本課程主要透過人工智慧相關技術主題的介紹與業界實例之分享，包括: 知識表達、\
+                機器學習、深度學習等，並實際運用機器學習工具如: TensorFlow、Keras、PyTorch等，並整合校務研究\
+                資料於專題課程，參與校務分析研究：考量資安的個資議題，擬將校內部份去識別化後之資料，\
+                經過編碼變造處理後於課堂使用，以教育相關大數據進行專題實作與分析。透過分組討論以及專題實作競賽，\
+                讓學生實際應用人工智慧工具與方法於教育資料分析。",
                 course_info_en: "",
                 cognition: "1",
                 knowledge: "",
@@ -302,7 +335,7 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
-                        semester: "",
+                        semester: "112學年第一學期",
                         id: "",
                         day: "",
                         time: ""

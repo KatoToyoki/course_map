@@ -22,10 +22,14 @@ export default function Download() {
                                 教育大數據微學程 修畢申請表<br />（內含修業證書、學分審核、學分抵免、修業審查表）
                             </li>
                             <li>
-                                臺北聯合大學系統 跨校微學程證書申請單
+                                <a href="../images/certificate.pdf" download>
+                                    臺北聯合大學系統 跨校微學程證書申請單
+                                </a>
                             </li>
                             <li>
-                                臺北聯合大學系統 校際選課申請表
+                                <a href="../images/application_form.pdf" download>
+                                    臺北聯合大學系統 校際選課申請表
+                                </a>
                             </li>
                         </ul>
                     </Col>
