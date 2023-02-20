@@ -136,7 +136,7 @@ export default function Introduce() {
 
                         <h5 className="orange_word">修讀門檻</h5>
                         <p className="inside">
-                            同學可自行規劃修讀科目，但至少需完成修讀本微學程基礎課程2門課、進階課程2門課、實務課程1門課，
+                            同學可自行規劃修讀科目，但至少需完成修讀本微學程基礎課程2門課、進階課程1門課、實務課程1門課，
                             且總應修學分數合計至少需達10學分。
                         </p>
                         <Row className="inside">
@@ -170,7 +170,7 @@ export default function Introduce() {
                                             <h4><b>進階課程</b></h4>
                                         </div>
                                         <div className="center">
-                                            選修至少2門課
+                                            選修至少1門課
                                         </div>
                                     </div>
                                     <br />
