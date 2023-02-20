@@ -87,13 +87,12 @@ export default function Introduce() {
                             如何在有限的就學時間內完成第二專長的修讀，可能會需要大量時間甚至超修學分費才可能完成修讀。
                             因此選擇修讀「微學程」成為一個具備高度彈性且良好的跨域學習途徑，同學僅需要重新檢視
                             原本每學期修讀的課程，加入選修微學程所規範的課程，修讀完畢可申請證書乙紙。
-                        </p>
 
 
-                        {/* the taking courses anchors (in order not to be covered by the navbar) */}
-                        <span id="taking_course" />
+                            {/* the taking courses anchors (in order not to be covered by the navbar) */}
+                            <span id="taking_course" />
 
-                        <p className="inside">
+                            <br /><br />
                             教育大數據微學程（簡稱本微學程）依循相關規範課程修讀最低僅需10學分，
                             本微學程架構主要分為「基礎、進階、實務」三個階段，帶領同學由淺入深的學習，
                             「基礎課程」著重於資訊與數據分析的能力培育；「進階課程」帶入資訊與數據能力於教育層面的應用，

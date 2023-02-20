@@ -274,14 +274,14 @@ export const category = [
                 course_depiction: "",
                 course_time: [
                     {
-                        semester: "",
-                        id: "",
-                        day: "",
-                        time: ""
+                        semester: "112學年第一學期",
+                        id: "317313",
+                        day: "週五",
+                        time: "09:00 - 12:00"
                     }
                 ],
-                department: "",
-                lecturer: ""
+                department: "資財系",
+                lecturer: "魏銪志"
             }
         ]
     },
