@@ -89,6 +89,18 @@ li {
     background: linear-gradient(-70deg, #41bee1, #adc48d);
 }
 
+.intro_1 {
+    background-color: #95c5a3;
+}
+
+.intro_2 {
+    background-color: #97b497;
+}
+
+.intro_3 {
+    background-color: #7b9885;
+}
+
 .inside {
     padding: 2%;
 }

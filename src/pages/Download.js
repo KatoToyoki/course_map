@@ -46,7 +46,9 @@ export default function Download() {
                                 教育大數據微學程施行細則
                             </li>
                             <li>
-                                微學程懶人包
+                                <a href="../images/all.pdf" download>
+                                    微學程懶人包
+                                </a>
                             </li>
                             <li>
                                 <a href="../images/poster.jpg" download>

@@ -25,7 +25,7 @@ export default function Introduce() {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="/introduce#course">教育大數據微學程</Dropdown.Item>
+                        <Dropdown.Item href="/introduce#course">微學程簡介</Dropdown.Item>
                         <Dropdown.Item href="/introduce#taking_course">修讀微學程</Dropdown.Item>
                         <Dropdown.Item href="/introduce#future_jobs">就業前景</Dropdown.Item>
                         <Dropdown.Item href="/introduce#learning_material">學習資源</Dropdown.Item>
@@ -36,7 +36,7 @@ export default function Introduce() {
             <div>
                 <a href="/introduce#course" className="no_decoration white_word">
                     <div className="com_button1">
-                        教育大數據微學程
+                        微學程簡介
                     </div>
 
                 </a>
@@ -68,11 +68,11 @@ export default function Introduce() {
                 <div className="content">
                     <div >
                         <h2 className="blue_word">
-                            認識微學程
+                            <b>認識微學程</b>
                         </h2>
                         <Row>
                             <Col xs={4} className='vertical'>
-                                <h4>教育大數據微學程</h4>
+                                <h4><b>微學程簡介</b></h4>
                             </Col>
                             <Col xs={8} className='inside'>
                                 <hr />
@@ -99,14 +99,12 @@ export default function Introduce() {
                             並建立資訊安全於教育的重要概念；「實務課程」則帶領學生針對實際教育場域的需求應用進行專題製作；
                             本微學程培養同學的第二專業提升跨領域思維及溝通，累積實務產業接觸的實作經驗，增加同學未來就業優勢。
                         </p>
-
                     </div>
 
                     <div>
-                        <br />
                         <Row>
                             <Col xs={3} className='vertical'>
-                                <h4>修讀微學程</h4>
+                                <h4><b>修讀微學程</b></h4>
                             </Col>
                             <Col xs={9} className='inside'>
                                 <hr />
@@ -114,18 +112,18 @@ export default function Introduce() {
                         </Row>
 
 
-                        <h5 className="orange_word">修讀對象</h5>
+                        <h5 className="orange_word"><b>修讀對象</b></h5>
                         <p className="inside">
                             本微學程開放【臺北聯合大學系統】在校生跨校選讀，包括臺北科大(主辦學校)、臺北大學、臺北醫大、臺灣海大。
                             由資工系的資訊專業、資財系的分析專業、師培中心的教育專業，三方師資共同開發培育教育資訊人才之跨領域課程。
                         </p>
 
-                        <h5 className="orange_word">修讀流程</h5>
+                        <h5 className="orange_word"><b>修讀流程</b></h5>
                         <div className="center">
                             <img src={order} width="70%"></img>
                         </div>
 
-                        <h5 className="orange_word">如何修讀</h5>
+                        <h5 className="orange_word"><b>如何修讀</b></h5>
                         <p className="inside">
                             北科學生修讀：欲修讀微學程之北科學生，依本校每學期選課開放時間(含加退選)內完成選課。
                             跨校學生修讀：北聯大系統之學生，同學應先填具本校「校際選課申請表-外校生至本校選課用」，
@@ -133,14 +131,14 @@ export default function Introduce() {
                             始可至本校修課，詳細辦法請參閱 <a href="https://oaa.ntut.edu.tw/p/412-1008-12844.php?Lang=zh-tw">本校校際選課規範</a> 。
                         </p>
 
-                        <h5 className="orange_word">修讀門檻</h5>
+                        <h5 className="orange_word"><b>修讀門檻</b></h5>
                         <p className="inside">
                             同學可自行規劃修讀科目，但至少需完成修讀本微學程基礎課程2門課、進階課程1門課、實務課程1門課，
                             且總應修學分數合計至少需達10學分。
                         </p>
                         <Row className="inside">
                             <Col sm={12} md={4} className='map_inside'>
-                                <div className="blue inside">
+                                <div className="intro_1 inside">
                                     <div className="white map_inside">
                                         <div className="center">
                                             <h4><b>基礎課程</b></h4>
@@ -163,7 +161,7 @@ export default function Introduce() {
                             </Col>
 
                             <Col sm={12} md={4} className='map_inside'>
-                                <div className="blue_green inside">
+                                <div className="intro_2 inside">
                                     <div className="white map_inside">
                                         <div className="center">
                                             <h4><b>進階課程</b></h4>
@@ -186,7 +184,7 @@ export default function Introduce() {
                             </Col>
 
                             <Col sm={12} md={4} className='map_inside' height="100%">
-                                <div className="orange inside">
+                                <div className="intro_3 inside">
                                     <div className="white map_inside">
                                         <div className="center">
                                             <h4><b>實務課程</b></h4>
@@ -215,14 +213,14 @@ export default function Introduce() {
                             </Col>
                         </Row>
                         <br />
-                        <h5 className="orange_word">修讀注意</h5>
+                        <h5 className="orange_word"><b>修讀注意</b></h5>
                         <ol>
                             <li>修習各類學程之學生每學期所修學分上下限仍依本校學則相關規定辦理。</li>
                             <li>修習各類學程其科目成績需併入學期修習總學分及學期成績計算。</li>
                             <li>修畢各類學程科目之學分，屬原系專業課程，計入專業學分；非屬原系課程，得計入跨系所選修學分，惟課程名稱及內容相同之科目，不得重複修習。</li>
                         </ol>
 
-                        <h5 className="orange_word">申請證書</h5>
+                        <h5 className="orange_word"><b>申請證書</b></h5>
                         <ol>
                             <li>
                                 已修畢微學程者，於填寫完修畢申請表後，請先送至微學程設置單位(北科資工系)進行初審。
@@ -238,7 +236,7 @@ export default function Introduce() {
 
 
 
-                        <h5 className="orange_word">相關網頁</h5>
+                        <h5 className="orange_word"><b>相關網頁</b></h5>
                         <ul>
                             <li>
                                 <a href="https://oaa.ntut.edu.tw/p/412-1008-13057.php?Lang=zh-tw">本校微學程說明</a>
@@ -258,6 +256,7 @@ export default function Introduce() {
                             <li>
                                 <a href="https://ustp.ntpu.edu.tw/info/14">北聯大微學程說明</a>
                             </li>
+                            <li><a href="https://aps.ntut.edu.tw/course/tw/Cprog.jsp?format=-3&year=111&matric=7">本校各系學分標準統計表</a></li>
                         </ul>
 
                     </div>
@@ -266,9 +265,9 @@ export default function Introduce() {
                         <br />
                         <Row>
                             <Col xs={3} className='vertical'>
-                                <h4>就業前景</h4>
+                                <h4><b>就業前景</b></h4>
                             </Col>
-                            <Col xs={9} className='inside'>
+                            <Col xs={9} className='map_inside'>
                                 <hr />
                             </Col>
                         </Row>
@@ -301,9 +300,9 @@ export default function Introduce() {
                         <br />
                         <Row>
                             <Col xs={3} className='vertical'>
-                                <h4>學習資源</h4>
+                                <h4><b>學習資源</b></h4>
                             </Col>
-                            <Col xs={9} className='inside'>
+                            <Col xs={9} className='map_inside'>
                                 <hr />
                             </Col>
                         </Row>
