@@ -26,6 +26,7 @@ export const category = [
                 value: "",
                 course_depiction: "學習計算機程式語言Python的基礎與應用，建立Python程式設計墓本概念，\
                     並能學以致用解決基本的問題。\n",
+                note: "",
                 course_time: [
                     {
                         semester: "111學年第二學期",
@@ -41,7 +42,7 @@ export const category = [
                     }
                 ],
                 department: "通識中心",
-                lecturer: "王李吉"
+                lecturer: "王李吉教授"
             },
             {
                 course_name: "數據程式設計",
@@ -75,16 +76,17 @@ export const category = [
                 course_depiction: "透過Python方式，自動建置必要的檔案環境，\
                     儲存及引用擷取來的巨量資訊或大數據，以利後續的搜尋與增刪，\
                     使能更符合教育現場對此數據的應用。",
+                note: "",
                 course_time: [
                     {
-                        semester: "112學年第一學期",
+                        semester: "111學年第二學期",
                         id: "316921",
                         day: "週四",
                         time: "16:00 - 19:00"
                     }
                 ],
                 department: "資訊工程系",
-                lecturer: "王李吉"
+                lecturer: "王李吉教授"
             },
             {
                 course_name: "教育數據分析與邏輯思維",
@@ -101,22 +103,24 @@ export const category = [
                 technology: "3",
                 value: "4",
                 course_depiction: "",
+                note: "",
                 course_time: [
                     {
                         semester: "112學年第一學期",
                         id: "",
                         day: "",
-                        time: ""
+                        time: "開課時間：待公告"
                     }
                 ],
-                department: "",
-                lecturer: ""
+                department: "資財系",
+                lecturer: "王貞淑教授"
             },
             {
-                course_name: "教育統計學",
+                course_name: "應用統計與數據分析",
                 course_id: "03",
                 credit: "2",
-                course_info_ch: "本門課程旨在提供給尚未具有基礎統計基礎的學生，熟悉並能夠應用統計分析技術在解決教育\
+                course_info_ch:
+                    "本門課程旨在提供給尚未具有基礎統計基礎的學生，熟悉並能夠應用統計分析技術在解決教育\
                 場域中所出現的教育研究問題。課程第一部份將從瞭解統計的基本概念開始，讓學生熟悉教育研究的情境。課程第二部份\
                 以迴歸分析做為分析技術的主軸，教授學生利用現有的教育領域數據資料庫，依照數據結構與研究問題的特性，選擇合\
                 適模型執行各項數據分析工作。第三部份將介紹多變量分析的理論與應用，讓學生得以更進一步認識除了教育行政數據之外，\
@@ -125,22 +129,33 @@ export const category = [
                 綜合各校的評價選擇Stata工具於校務研究使用，具有以下三點優勢：數據清理、功能具擴充性、結合社會科學領域數據結構\
                 以及計算社會科學的優勢。本學程需要一套r接近R和Python這種開源性的程式語言分析軟體並兼具簡單易學的作業平台，將以Stata作為作業平台。",
 
-                course_info_en: "",
+                course_info_en:
+                    "This course aims to give students the opportunity to study statistics and its application \
+                on the field.The first section would introduce basic statistical concepts including sampling, \
+                distribution, measurement, among others.The second section would introduce regression methods.\
+                Students would also learn how to conduct data analysis using Stata, the most powerful software \
+                in econometrics.The third section would introduce multivariate statistics, including factor analysis \
+                and cluster analysis.In addition to handling administrative data, students would also learn the concept \
+                of latent variable and its application.After finishing this course, students would not only know \
+                the most advanced data analytics techniques but also have the ability to do programing for \
+                data analysis tasks.",
+
                 cognition: "",
                 knowledge: "2",
                 technology: "3",
                 value: "4",
                 course_depiction: "",
+                note: "",
                 course_time: [
                     {
                         semester: "112學年第一學期",
                         id: "",
                         day: "",
-                        time: ""
+                        time: "開課時間：待公告"
                     }
                 ],
-                department: "",
-                lecturer: ""
+                department: "通識中心",
+                lecturer: "傅遠志教授"
             }
         ]
     },
@@ -180,6 +195,7 @@ export const category = [
                 value: "4",
                 course_depiction: "課程討論資料科學中各主要階段的相關議題，著重如何實際應用所學，\
                     將使用教育資料並以小組方式進行議題發想與分析實作的學期專題。",
+                note: "備註：資工系同學不可認列跨領域學習畢業之條件。",
                 course_time: [
                     {
                         semester: "111學年第二學期",
@@ -189,7 +205,7 @@ export const category = [
                     }
                 ],
                 department: "資訊工程系",
-                lecturer: "劉傳銘"
+                lecturer: "劉傳銘教授"
             },
             {
                 course_name: "校務研究：教育場域數據分析實作",
@@ -209,16 +225,17 @@ export const category = [
                 technology: "3",
                 value: "4",
                 course_depiction: "",
+                note: "",
                 course_time: [
                     {
                         semester: "112學年第一學期",
                         id: "",
                         day: "",
-                        time: ""
+                        time: "開課時間：待公告"
                     }
                 ],
-                department: "",
-                lecturer: ""
+                department: "教務處 (校院級課程)",
+                lecturer: "傅遠志教授"
             },
             {
                 course_name: "教育數據探勘與應用",
@@ -234,16 +251,17 @@ export const category = [
                 technology: "3",
                 value: "4",
                 course_depiction: "",
+                note: "",
                 course_time: [
                     {
                         semester: "112學年第一學期",
                         id: "",
                         day: "",
-                        time: ""
+                        time: "開課時間：待公告"
                     }
                 ],
-                department: "",
-                lecturer: ""
+                department: "資訊工程系",
+                lecturer: "王正豪教授"
             },
             {
                 course_name: "資訊安全教育應用",
@@ -272,16 +290,17 @@ export const category = [
                 technology: "3",
                 value: "",
                 course_depiction: "",
+                note: "",
                 course_time: [
                     {
-                        semester: "112學年第一學期",
+                        semester: "111學年第二學期",
                         id: "317313",
                         day: "週五",
                         time: "09:00 - 12:00"
                     }
                 ],
                 department: "資財系",
-                lecturer: "魏銪志"
+                lecturer: "魏銪志教授"
             }
         ]
     },
@@ -307,16 +326,17 @@ export const category = [
                 technology: "3",
                 value: "4",
                 course_depiction: "",
+                note: "",
                 course_time: [
                     {
                         semester: "112學年第一學期",
                         id: "",
                         day: "",
-                        time: ""
+                        time: "開課時間：待公告"
                     }
                 ],
-                department: "",
-                lecturer: ""
+                department: "教務處 (校院級課程)",
+                lecturer: "王貞淑教授、魏銪志教授、傅遠志教授"
             },
             {
                 course_name: "應用人工智慧於教育專題製作",
@@ -333,16 +353,17 @@ export const category = [
                 technology: "3",
                 value: "4",
                 course_depiction: "",
+                note: "",
                 course_time: [
                     {
-                        semester: "112學年第一學期",
+                        semester: "112學年第二學期",
                         id: "",
                         day: "",
-                        time: ""
+                        time: "開課時間：待公告"
                     }
                 ],
-                department: "",
-                lecturer: ""
+                department: "教務處 (校院級課程)",
+                lecturer: "王正豪教授、劉傳銘教授、傅遠志教授"
             }
         ]
     }

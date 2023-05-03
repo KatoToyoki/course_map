@@ -72,6 +72,9 @@ export default function Course() {
                     <Col sm={12} className='orange_word'>
                         <p><b>{data.course_depiction}</b></p>
                     </Col>
+                    <Col sm={12}>
+                        <p>{data.note}</p>
+                    </Col>
                     <Col sm={4} className='light_green inside'>
                         核心能力
                     </Col>
@@ -90,6 +93,30 @@ export default function Course() {
                                 {value}
                             </Col>
                         </Row>
+                    </Col>
+
+                    <Col sm={4} className='inside'>
+                        開課單位
+                    </Col>
+                    <Col sm={8} className='inside'>
+                        {data.department}
+                    </Col>
+
+                    <Col sm={12} md={4}></Col>
+                    <Col sm={12} md={8}>
+                        <hr />
+                    </Col>
+
+                    <Col sm={4} className='inside'>
+                        授課教師
+                    </Col>
+                    <Col sm={8} className='inside'>
+                        {data.lecturer}
+                    </Col>
+
+                    <Col sm={12} md={4}></Col>
+                    <Col sm={12} md={8}>
+                        <hr />
                     </Col>
 
                     <Col sm={4} className='inside'>
@@ -113,7 +140,7 @@ export default function Course() {
 
 
                     <Col sm={4} className='inside'>
-                        開課時間
+                        課程時段
                     </Col>
                     <Col sm={8} className='inside'>
                         {data.course_time.map((time) => {
@@ -165,24 +192,6 @@ export default function Course() {
                     <Col sm={12} md={4}></Col>
                     <Col sm={12} md={8}>
                         <hr />
-                    </Col>
-
-                    <Col sm={4} className='inside'>
-                        開課系級
-                    </Col>
-                    <Col sm={8} className='inside'>
-                        {data.department}
-                    </Col>
-                    <Col sm={12} md={4}></Col>
-                    <Col sm={12} md={8}>
-                        <hr />
-                    </Col>
-
-                    <Col sm={4} className='inside'>
-                        授課教師
-                    </Col>
-                    <Col sm={8} className='inside'>
-                        {data.lecturer}
                     </Col>
 
                     <Col sm={12}>

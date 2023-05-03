@@ -11,7 +11,6 @@ export default function News() {
             <div className="content">
                 <h2 className="blue_word">最新消息</h2>
                 <br />
-                {/* <div>暫無資料</div> */}
                 {news.map((data) => {
                     return (
                         <Row>

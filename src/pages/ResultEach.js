@@ -7,11 +7,9 @@ import '../css/style.css'
 
 export default function ResultEach() {
     const id = (window.location.href).slice(-3),
-        data = findData(id),
-        audio = aud(data.audio),
-        video = vid(data.video),
-        image = img(data.image);
+        data = findData(id);
 
+    var contents = data.content.split("\n")
 
     function findData(id) {
         for (var i = 0; i < result.length; i++) {
@@ -21,25 +19,8 @@ export default function ResultEach() {
         }
     }
 
-    function img(image) {
-        if (image === "") {
-            return <div></div>
-        }
-        return <img src={data.image} alt={data.title} width="100%"></img>
-    }
-
-    function aud(audio) {
-        if (audio === "") {
-            return <div></div>
-        }
-        return <audio width="100%" controls><source src={data.audio} type="audio/mpeg" /></audio>
-    }
-
-    function vid(video) {
-        if (video === "") {
-            return <div></div>
-        }
-        return <video width="100%" controls><source src={data.video} type="video/mp4" /></video>
+    const convert = (contents) => {
+        return contents.map(content => <div>{content}</div>)
     }
 
     return (
@@ -47,36 +28,67 @@ export default function ResultEach() {
             <div className="content">
                 <h2 className="blue_word">
                     {data.title}
+
                 </h2>
-                <br />
                 <p>
-                    {data.content}
+                    {convert(contents)}
                 </p>
                 <div className="center">
-                    {image}
+                    {data.image.map((img) => {
+                        let images = [];
+                        for (let i = 0; i < Object.keys(img).length; i++) {
+                            let pointer = "";
+                            if (i < 10) {
+                                pointer = "0" + "" + i;
+                            }
+                            else {
+                                pointer = "" + i;
+                            }
+
+                            images.push(
+                                <Col xs={12} sm={12} md={6} lg={4} className="center">
+                                    <img src={img["image" + pointer]} width="100%"></img>
+                                </Col>
+                            );
+                        }
+                        if (images.length == 1) {
+                            return (
+                                <div className="center">
+                                    <Row style={{ rowGap: '14px' }}>
+                                        <Col md={3} lg={4}></Col>
+                                        {images}
+                                    </Row>
+                                </div>
+                            )
+                        }
+                        else {
+                            return (
+                                <div className="center">
+                                    <Row style={{ rowGap: '14px' }}>
+                                        {images}
+                                    </Row>
+                                </div>
+                            );
+                        }
+                    })}
                 </div>
 
-                <br /> <br />
-
                 <div className="center">
-                    {audio}
                 </div>
 
-                <br /> <br />
-
                 <div className="center">
-                    {video}
                 </div>
 
-                <br /><br />
+                <br /><hr />
+
                 <div className="center">
-                    <a href={"/news"}>
+                    <a href={"/result"}>
                         <Button className="blue">
                             上一頁
                         </Button>
                     </a>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

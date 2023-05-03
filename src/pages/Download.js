@@ -19,15 +19,15 @@ export default function Download() {
                         </div>
                         <ul>
                             <li>
-                                教育大數據微學程 修畢申請表<br />（內含修業證書、學分審核、學分抵免、修業審查表）
+                                教育大數據微學程修畢申請表【待更新公告】<br />（內含修業證書、學分審核、學分抵免、修業審查表）
                             </li>
                             <li>
-                                <a href="../images/certificate.pdf" download>
+                                <a href="../images/download/certificate.pdf" download>
                                     臺北聯合大學系統 跨校微學程證書申請單
                                 </a>
                             </li>
                             <li>
-                                <a href="../images/application_form.pdf" download>
+                                <a href="../images/download/application_form.pdf" download>
                                     臺北聯合大學系統 校際選課申請表
                                 </a>
                             </li>
@@ -40,18 +40,18 @@ export default function Download() {
                         </div>
                         <ul>
                             <li>
-                                國立臺北科技大學學程實施辦法
+                                教育大數據開課規劃書【待更新公告】
                             </li>
                             <li>
-                                教育大數據微學程施行細則
+                                教育大數據微學程施行細則【待更新公告】
                             </li>
                             <li>
-                                <a href="../images/all.pdf" download>
+                                <a href="../images/download/all.pdf" download>
                                     微學程懶人包
                                 </a>
                             </li>
                             <li>
-                                <a href="../images/poster.jpg" download>
+                                <a href="../images/download/poster.jpg" download>
                                     微學程宣傳海報
                                 </a>
                             </li>

@@ -13,7 +13,7 @@ export const news = [
         ",
         image: [
             {
-                image00: "../images/topic_2023_03.jpg",
+                image00: "../images/news/20230320/topic_2023_03.jpg",
             }
         ],
         audio: [
@@ -44,7 +44,7 @@ export const news = [
             ",
         image: [
             {
-                image00: "../images/20230315.png",
+                image00: "../images/news/20230315/20230315.png",
             }
         ],
         audio: [
@@ -77,7 +77,7 @@ export const news = [
         ",
         image: [
             {
-                image00: "../images/winter_camp_2023.jpg",
+                image00: "../images/news/20230202/winter_camp_2023.jpg",
             }
         ],
         audio: [
@@ -111,7 +111,7 @@ export const news = [
         ",
         image: [
             {
-                image00: "../images/20230201.png",
+                image00: "../images/news/20230201/20230201.png",
             }
         ],
         audio: [
@@ -134,17 +134,17 @@ export const news = [
         content: "想要踏入教育大數據的同學，懶人包為你解惑！",
         image: [
             {
-                image00: "../images/slide1.jpg",
-                image01: "../images/slide2.jpg",
-                image02: "../images/slide3.jpg",
-                image03: "../images/slide4.jpg",
-                image04: "../images/slide5.jpg",
-                image05: "../images/slide6.jpg",
-                image06: "../images/slide7.jpg",
-                image07: "../images/slide8.jpg",
-                image08: "../images/slide9.jpg",
-                image09: "../images/slide10.jpg",
-                image10: "../images/slide11.jpg",
+                image00: "../images/news/20230110/slide1.jpg",
+                image01: "../images/news/20230110/slide2.jpg",
+                image02: "../images/news/20230110/slide3.jpg",
+                image03: "../images/news/20230110/slide4.jpg",
+                image04: "../images/news/20230110/slide5.jpg",
+                image05: "../images/news/20230110/slide6.jpg",
+                image06: "../images/news/20230110/slide7.jpg",
+                image07: "../images/news/20230110/slide8.jpg",
+                image08: "../images/news/20230110/slide9.jpg",
+                image09: "../images/news/20230110/slide10.jpg",
+                image10: "../images/news/20230110/slide11.jpg",
             }
         ],
         audio: [
@@ -176,10 +176,10 @@ export const news = [
         ,
         image: [
             {
-                image00: "../images/1.jpg",
-                image01: "../images/2.jpg",
-                image02: "../images/3.jpg",
-                image03: "../images/4.jpg",
+                image00: "../images/news/20221220/1.jpg",
+                image01: "../images/news/20221220/2.jpg",
+                image02: "../images/news/20221220/3.jpg",
+                image03: "../images/news/20221220/4.jpg",
             }
         ],
         audio: [
@@ -202,7 +202,7 @@ export const news = [
         content: "教育大數據微學程，歡迎同學們加入修讀！",
         image: [
             {
-                image00: "../images/poster.jpg",
+                image00: "../images/news/20221201/poster.jpg",
             }
         ],
         audio: [

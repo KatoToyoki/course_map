@@ -80,7 +80,7 @@ export default function Layout() {
                                             <FontAwesomeIcon icon={faEnvelope} />
                                         </Col>
                                         <Col xs={11}>
-                                            <b>電子信箱：wert119911@mail.ntut.edu.tw</b><br />
+                                            <b>電子信箱：wert119911@ntut.edu.tw</b><br />
                                         </Col>
                                     </Row>
 
