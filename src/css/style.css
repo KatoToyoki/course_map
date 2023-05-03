@@ -8,8 +8,13 @@ body {
 }
 
 p,
+pre,
 li {
     line-height: 2;
+}
+
+pre {
+    font-size: medium;
 }
 
 .center {

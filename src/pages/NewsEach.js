@@ -9,12 +9,18 @@ export default function NewsEach() {
     const id = (window.location.href).slice(-3),
         data = findData(id);
 
+    var contents = data.content.split("\n")
+
     function findData(id) {
         for (var i = 0; i < news.length; i++) {
             if (news[i].news_id === id) {
                 return news[i];
             }
         }
+    }
+
+    const convert = (contents) => {
+        return contents.map(content => <div>{content}</div>)
     }
 
     return (
@@ -24,9 +30,8 @@ export default function NewsEach() {
                     {data.title}
 
                 </h2>
-                <br />
                 <p>
-                    {data.content}
+                    {convert(contents)}
                 </p>
                 <div className="center">
                     {data.image.map((img) => {
@@ -45,18 +50,11 @@ export default function NewsEach() {
                                     <img src={img["image" + pointer]} width="100%"></img>
                                 </Col>
                             );
-                            if ((i + 1) % 3 == 0) {
-                                images.push(
-                                    <Col sm={12}>
-                                        <br />
-                                    </Col>
-                                )
-                            }
                         }
                         if (images.length == 1) {
                             return (
                                 <div className="center">
-                                    <Row>
+                                    <Row style={{ rowGap: '14px' }}>
                                         <Col md={3} lg={4}></Col>
                                         {images}
                                     </Row>
@@ -65,9 +63,8 @@ export default function NewsEach() {
                         }
                         else {
                             return (
-
                                 <div className="center">
-                                    <Row>
+                                    <Row style={{ rowGap: '14px' }}>
                                         {images}
                                     </Row>
                                 </div>
@@ -77,12 +74,12 @@ export default function NewsEach() {
                 </div>
 
                 <div className="center">
-                    {/* {audio} */}
                 </div>
 
                 <div className="center">
-                    {/* {video} */}
                 </div>
+
+                <br /><hr />
 
                 <div className="center">
                     <a href={"/news"}>
