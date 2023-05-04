@@ -20,7 +20,9 @@ export default function NewsEach() {
     }
 
     const convert = (contents) => {
-        return contents.map(content => <div>{content}</div>)
+        return contents.map(content => <div style={{
+            minHeight: '16px'
+        }}>{content}</div>)
     }
 
     return (
