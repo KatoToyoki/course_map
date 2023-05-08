@@ -250,7 +250,7 @@ export const category = [
                 technology: "3",
                 value: "4",
                 course_depiction: "",
-                note: "",
+                note: "備註：資工系同學不可認列跨領域學習畢業之條件。",
                 course_time: [
                     {
                         semester: "112學年第一學期",
@@ -289,7 +289,7 @@ export const category = [
                 technology: "3",
                 value: "",
                 course_depiction: "",
-                note: "",
+                note: "備註：資工系同學不可認列跨領域學習畢業之條件。",
                 course_time: [
                     {
                         semester: "111學年第二學期",

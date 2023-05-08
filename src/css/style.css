@@ -17,6 +17,10 @@ pre {
     font-size: medium;
 }
 
+a {
+    word-break: break-all;
+}
+
 .center {
     display: flex;
     justify-content: center;

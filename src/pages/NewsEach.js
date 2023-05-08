@@ -20,9 +20,29 @@ export default function NewsEach() {
     }
 
     const convert = (contents) => {
-        return contents.map(content => <div style={{
-            minHeight: '16px'
-        }}>{content}</div>)
+        let cs = []
+        for (var i = 0; i < contents.length; i++) {
+            console.log(contents[i], contents[i].includes("https://"));
+            if (contents[i].includes("https://")) {
+                let start;
+                for (var j = 0; j < contents[i].length - 8; j++) {
+                    if (contents[i].substring(j, j + 8) == "https://") {
+                        start = j;
+                    }
+                }
+                cs.push(
+                    <span>{contents[i].substring(0, start)}<a href={contents[i].substring(start,)}>{contents[i].substring(start,)}</a></span>
+                )
+            }
+            else {
+                cs.push(
+                    contents[i]
+                )
+            }
+        }
+
+        return cs.map(item =>
+            <div style={{ minHeight: '16px' }}>{item}</div>)
     }
 
     return (
