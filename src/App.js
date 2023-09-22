@@ -14,28 +14,33 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 export default function App() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<News />} />
-                    <Route path="/news" element={<News />} />
-                    <Route path="/news">
-                        <Route path=":news_id" element={<NewsEach />} />
-                    </Route>
-                    <Route path="/map" element={<Map />} />
-                    <Route path="/map/course">
-                        <Route path=":course_id" element={<Course />} />
-                    </Route>
-                    <Route path="/qa" element={<QA />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/result" element={<Result />} />
-                    <Route path="/result">
-                        <Route path=":result_id" element={<ResultEach />} />
-                    </Route>
-                    <Route path="/download" element={<Download />} />
-                    <Route path="/introduce" element={<Introduce />}></Route>
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        // <BrowserRouter>
+        //     <Routes>
+        //         <Route path="/" element={<Layout />}>
+        //             <Route index element={<News />} />
+        //             <Route path="/news" element={<News />} />
+        //             <Route path="/news">
+        //                 <Route path=":news_id" element={<NewsEach />} />
+        //             </Route>
+        //             <Route path="/map" element={<Map />} />
+        //             <Route path="/map/course">
+        //                 <Route path=":course_id" element={<Course />} />
+        //             </Route>
+        //             <Route path="/qa" element={<QA />} />
+        //             <Route path="/about" element={<About />} />
+        //             <Route path="/result" element={<Result />} />
+        //             <Route path="/result">
+        //                 <Route path=":result_id" element={<ResultEach />} />
+        //             </Route>
+        //             <Route path="/download" element={<Download />} />
+        //             <Route path="/introduce" element={<Introduce />}></Route>
+        //         </Route>
+        //     </Routes>
+        // </BrowserRouter>
+        <div className='center flex-wrapper' style={{ padding: '20%' }}>
+            <h1>
+                網站維修中
+            </h1>
+        </div>
     )
 }
