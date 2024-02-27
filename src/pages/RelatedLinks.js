@@ -22,14 +22,21 @@ export default function Download() {
         </h2>
         <br />
         <Row>
-          <Col sm={12} md={6}>
-            <div className="center">
+          <Col
+            sm={12}
+            md={4}
+            className="center"
+            style={{ paddingBottom: "40px" }}
+          >
+            <div>
               <h5>
                 <FontAwesomeIcon icon={faMagnifyingGlass} size="5x" />
                 <br />
                 <p>課程查詢</p>
               </h5>
             </div>
+          </Col>
+          <Col sm={12} md={8}>
             <ul>
               <li>
                 <a href="https://aps.ntut.edu.tw/course/tw/SearchMProgram.jsp?format=-2&year=112&sem=2&code=AVW">
@@ -49,8 +56,14 @@ export default function Download() {
             </ul>
           </Col>
 
-          <Col sm={12} md={6}>
-            <div className="center">
+          <Col
+            sm={12}
+            md={4}
+            className="center"
+            style={{ paddingBottom: "40px" }}
+          >
+            <div>
+              <br />
               <h5>
                 <FontAwesomeIcon icon={faBook} size="5x" />
                 <br />
@@ -59,6 +72,8 @@ export default function Download() {
                 </p>
               </h5>
             </div>
+          </Col>
+          <Col sm={12} md={8}>
             <ul>
               <li>
                 <a href="https://oaa.ntut.edu.tw/var/file/8/1008/img/2880/AVW.pdf">
@@ -88,14 +103,21 @@ export default function Download() {
             </ul>
           </Col>
 
-          <Col sm={12} md={6} style={{ paddingTop: "50px" }}>
-            <div className="center">
+          <Col
+            sm={12}
+            md={4}
+            className="center"
+            style={{ paddingBottom: "40px" }}
+          >
+            <div>
               <h5>
                 <FontAwesomeIcon icon={faUser} size="5x" />
                 <br />
                 <p>北科大學生</p>
               </h5>
             </div>
+          </Col>
+          <Col sm={12} md={8}>
             <ul>
               <li>
                 <a href="https://aps.ntut.edu.tw/course/tw/Cprog.jsp?format=-3&year=111&matric=7">
@@ -110,14 +132,21 @@ export default function Download() {
             </ul>
           </Col>
 
-          <Col sm={12} md={6} style={{ paddingTop: "50px" }}>
-            <div className="center">
+          <Col
+            sm={12}
+            md={4}
+            className="center"
+            style={{ paddingBottom: "40px" }}
+          >
+            <div>
               <h5>
                 <FontAwesomeIcon icon={faUserGroup} size="5x" />
                 <br />
                 <p>北聯大學生</p>
               </h5>
             </div>
+          </Col>
+          <Col sm={12} md={8}>
             <ul>
               <li>
                 <a href="https://oaa.ntut.edu.tw/p/412-1008-12844.php?Lang=zh-tw">

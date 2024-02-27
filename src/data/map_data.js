@@ -31,7 +31,7 @@ export const category = [
             time: "08:00 - 10:00",
           },
           {
-            semester: "112學年度第2學期",
+            semester: "",
             id: "331633",
             day: "週一",
             time: "10:00 - 12:00",
@@ -84,7 +84,8 @@ export const category = [
                 藉由IT技術的應用演練，讓學生將實際進行問題分析、模型發展、系統開發、模擬實驗及最後的研究結論與模型驗證。\
                 提升學生獨立思考與解決問題之能力，培養科學的態度與學術研究的知識。",
 
-        course_info_en: "",
+        course_info_en:
+          "This course is to enable students to understand the relationship between various Information Technology and management information systems, and cooperate with financial companies to introduce industrial topics, and actually apply the IT technology taught for academic research. Through the application and exercise of IT technology, students will actually carry out problem analysis, model development, system development, and simulation experiments. At last, students can summarize research conclusions and model validation. Thus, students can improve their independent thinking and problem-solving ability, and further cultivate their scientific attitude and academic research knowledge.",
         cognition: "1",
         knowledge: "",
         technology: "3",
@@ -94,9 +95,15 @@ export const category = [
         course_time: [
           {
             semester: "112學年第一學期",
-            id: "",
-            day: "",
-            time: "開課時間：待公告",
+            id: "324560（大學部）",
+            day: "週三",
+            time: "13:00 - 16:00",
+          },
+          {
+            semester: "",
+            id: "324576（研究所）",
+            day: "週三",
+            time: "13:00 - 16:00",
           },
         ],
         department: "資財系",
@@ -168,7 +175,13 @@ export const category = [
         course_time: [
           {
             semester: "112學年第二學期",
-            id: "328978",
+            id: "328978（研究所）",
+            day: "週一",
+            time: "09:00 - 12:00",
+          },
+          {
+            semester: "",
+            id: "331118（大學部）",
             day: "週一",
             time: "09:00 - 12:00",
           },
@@ -200,7 +213,13 @@ export const category = [
         course_time: [
           {
             semester: "112學年第二學期",
-            id: "332507, 332526",
+            id: "332507（大學部）",
+            day: "週一",
+            time: "14:00 - 17:00",
+          },
+          {
+            semester: "",
+            id: "332526（研究所）",
             day: "週一",
             time: "14:00 - 17:00",
           },
@@ -325,7 +344,13 @@ export const category = [
         course_time: [
           {
             semester: "112學年第二學期",
-            id: "332504, 332527",
+            id: "332504（大學部）",
+            day: "週二",
+            time: "13:00 - 16:00",
+          },
+          {
+            semester: "",
+            id: "332527（研究所）",
             day: "週二",
             time: "13:00 - 16:00",
           },
