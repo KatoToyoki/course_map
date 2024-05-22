@@ -92,7 +92,7 @@ export default function Download() {
               </li>
               <li>
                 <a href="https://docs.google.com/document/d/1SyhqzmJpg183ICZMoY5GpdlksJUpDHXLgTolHlj7EKE/edit?usp=sharing">
-                  教育大數據 微學程課程抵認證明
+                  課程抵認證明書
                 </a>
               </li>
               <li>
