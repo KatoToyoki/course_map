@@ -91,6 +91,11 @@ export default function Download() {
                 </a>
               </li>
               <li>
+                <a href="https://docs.google.com/document/d/1SyhqzmJpg183ICZMoY5GpdlksJUpDHXLgTolHlj7EKE/edit?usp=sharing">
+                  教育大數據 微學程課程抵認證明
+                </a>
+              </li>
+              <li>
                 <a href="https://oaa.ntut.edu.tw/p/412-1008-17153.php?Lang=zh-tw">
                   教務處官網公告網頁（教育大數據微學程）
                 </a>
